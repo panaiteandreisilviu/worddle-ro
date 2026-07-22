@@ -444,7 +444,6 @@ axiomatizare
 azbotextolit
 azerbaidjană
 azvârlitoare
-babyschilift
 bacalaureată
 baciloscopie
 bacteriofite
@@ -1326,8 +1325,6 @@ donchijotesc
 donchijotism
 donchișotesc
 donchișotism
-donquijotesc
-donquijotism
 dorsoventral
 dracunculoză
 dramaturghie
@@ -2609,12 +2606,9 @@ neocatharsis
 neoclasicism
 neocriticism
 neocriticist
-neodarwinism
-neodarwinist
 neodictatură
 neogramatică
 neohegeliană
-neokeynesism
 neolatinistă
 neolingvistă
 neonatalogie
@@ -2654,7 +2648,6 @@ neutralizant
 neutrodinare
 nevindecabil
 nevocarcinom
-newtonianism
 neîmprejmuit
 neîncadrabil
 neînfricoșat
@@ -2925,7 +2918,6 @@ perineorafie
 perineotomie
 periodogramă
 periodontită
-perionychium
 periooforită
 peripatetică
 peripatetism
@@ -3302,7 +3294,6 @@ pupiloscopie
 pângăritoare
 păducherniță
 păhărniceasă
-quattrocento
 rachetomodel
 radarterapie
 radicalizare
@@ -4145,7 +4136,6 @@ vulcanizator
 vulcanocarst
 vulgarizator
 vânturătoare
-weismannistă
 xeroftalmică
 xerotermofil
 zaharificare
@@ -4171,7 +4161,6 @@ zoosemiotică
 zootehnician
 zoroastriană
 zvârcolitură
-zwinglianism
 îmbarcațiune
 îmbielșugare
 îmblătitoare

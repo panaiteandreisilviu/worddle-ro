@@ -25,7 +25,6 @@ bei
 big
 bob
 box
-boy
 bum
 bun
 but
@@ -83,7 +82,6 @@ fox
 fug
 fum
 fur
-gay
 gaz
 gen
 get

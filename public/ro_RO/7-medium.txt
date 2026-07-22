@@ -357,7 +357,6 @@ calipso
 calmare
 caloric
 calorie
-calypso
 cambulă
 cambuză
 camelie
@@ -753,7 +752,6 @@ dioxină
 dirijat
 disloca
 disocia
-display
 dispnee
 distila
 doldora
@@ -868,7 +866,6 @@ ezitant
 fabiană
 faianța
 faianță
-fairway
 falangă
 fandare
 faringe
@@ -936,7 +933,6 @@ forfotă
 formata
 fortuit
 fortuna
-forward
 forțare
 fotonic
 fracție
@@ -1036,7 +1032,6 @@ gripare
 grobian
 gropiță
 grosier
-gruyere
 grăitor
 grăjdar
 grăunte
@@ -1630,7 +1625,6 @@ pedantă
 peeling
 pelvian
 penalti
-penalty
 pendula
 pendulă
 pensetă
@@ -1850,10 +1844,6 @@ pătimit
 pătrime
 pășunat
 pățanie
-quartet
-quechua
-quetzal
-quintal
 racolat
 radiant
 radiere
@@ -2060,7 +2050,6 @@ semizeu
 semnala
 semnare
 seppuku
-sequoia
 serafim
 serbare
 serpent
@@ -2077,8 +2066,6 @@ sfârâit
 sfărmat
 sfărâma
 sfărâmă
-showbiz
-showman
 siameză
 sicomor
 sidecar
@@ -2151,7 +2138,6 @@ spulber
 spumant
 spurcat
 stafidă
-standby
 staniol
 starter
 statuar
@@ -2209,7 +2195,6 @@ surveni
 survola
 suscita
 suspina
-swahili
 sâmbure
 sârbesc
 săculeț
@@ -2251,7 +2236,6 @@ textual
 textură
 tiamină
 tibetan
-tilbury
 timbrat
 timorat
 tinerea
@@ -2319,7 +2303,6 @@ turcesc
 turcoaz
 turistă
 turnare
-tweeter
 tâlmaci
 târâtor
 tăbliță
@@ -2439,11 +2422,8 @@ văgăună
 văicări
 vătămat
 văzător
-walkman
-warrant
 xenofob
 xilofon
-yemenit
 zaharat
 zbatere
 zbengui

@@ -170,7 +170,6 @@ burs
 bură
 busc
 buși
-byte
 bâză
 băși
 caco
@@ -534,7 +533,6 @@ hipn
 hipo
 hips
 hlei
-hoby
 hoco
 hoge
 holo
@@ -660,7 +658,6 @@ koka
 kola
 kudu
 kvar
-kyat
 labi
 lacs
 lact
@@ -886,7 +883,6 @@ orie
 orna
 orta
 orto
-oryx
 oscă
 oset
 osit
@@ -980,7 +976,6 @@ ptru
 pudl
 puer
 puia
-pyas
 pâlș
 pârg
 pâră
@@ -1266,8 +1261,6 @@ vânj
 vârv
 vădi
 văra
-whig
-witz
 xant
 xeno
 xero

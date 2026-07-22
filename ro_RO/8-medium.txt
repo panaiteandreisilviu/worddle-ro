@@ -214,7 +214,6 @@ avariere
 avariție
 avionică
 avocățel
-ayatolah
 așchiuță
 ațâțător
 backhand
@@ -301,7 +300,6 @@ bulgăraș
 bulversa
 bumbăcit
 bungalou
-bungalow
 bunicuță
 bunăoară
 burdihan
@@ -338,7 +336,6 @@ băștinaș
 cabestan
 cadastru
 cafeluță
-cakewalk
 calabrez
 calambur
 calamină
@@ -549,7 +546,6 @@ coșmelie
 coțofană
 crainică
 crampona
-crawling
 creatină
 creditor
 creieraș
@@ -607,7 +603,6 @@ cățelușă
 dantelat
 darabană
 datornic
-deadwood
 debarasa
 debutant
 decadent
@@ -867,7 +862,6 @@ eșafodaj
 facsimil
 factotum
 facțiune
-fairplay
 fanatică
 fanatism
 fandango
@@ -893,7 +887,6 @@ fervență
 fervoare
 fetișism
 fetișist
-fidelity
 fiduciar
 fiertură
 figurant
@@ -907,7 +900,6 @@ filistin
 filosofa
 filozofa
 finalist
-firmware
 fisurare
 fitecine
 flamandă
@@ -1200,8 +1192,6 @@ junioară
 jupuitor
 jurizare
 karateka
-keyboard
-kilowatt
 laborant
 laborios
 laburist
@@ -1251,7 +1241,6 @@ lisergic
 listeria
 litigios
 litteram
-lobbyist
 locatară
 locuibil
 logaritm
@@ -1376,7 +1365,6 @@ morcovel
 mormoloc
 mortieră
 moscovit
-mosquito
 motivare
 motocros
 motoretă
@@ -1791,7 +1779,6 @@ părăsire
 părăstas
 păstorit
 pătrățel
-quisling
 rablagit
 racolare
 radiolog
@@ -1981,7 +1968,6 @@ shetland
 shilling
 shipping
 shogunat
-showroom
 siberian
 sifonare
 sigilare
@@ -2043,7 +2029,6 @@ sporovăi
 sprinten
 sprinter
 spălăcit
-squatter
 staccato
 stacojiu
 stafidit
@@ -2188,7 +2173,6 @@ tiramisu
 titulară
 tocmeală
 tocătură
-tomahawk
 tomnatic
 tonifiat
 topograf
@@ -2316,12 +2300,6 @@ vânturat
 vânturel
 văcăriță
 vărsător
-walhalla
-walkirie
-windsurf
-workshop
-yachting
-yearling
 zaharină
 zaharoză
 zaharuri

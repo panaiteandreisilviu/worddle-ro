@@ -1124,7 +1124,6 @@ basamac
 baschet
 bascula
 basculă
-basedow
 basidie
 bastard
 bastarn
@@ -1422,7 +1421,6 @@ bouresc
 bourree
 bovaric
 bovideu
-bowling
 bozafer
 boșiman
 boșorog
@@ -1770,7 +1768,6 @@ caloneț
 caloric
 calorie
 calvină
-calypso
 camaieu
 camarad
 camarot
@@ -2692,7 +2689,6 @@ cornist
 corniză
 cornișă
 corniță
-cornwal
 cornări
 coroană
 coroiaj
@@ -2748,7 +2744,6 @@ cotruță
 cottage
 cotărit
 coulomb
-country
 couture
 covercă
 covergă
@@ -3639,7 +3634,6 @@ dispare
 dispașă
 dispera
 dispers
-display
 dispnee
 dispreț
 dispune
@@ -4448,7 +4442,6 @@ fagacee
 fagocit
 faianța
 faianță
-fairway
 falangă
 falbala
 falconi
@@ -4743,7 +4736,6 @@ fornăit
 fortran
 fortuit
 fortuna
-forward
 forzato
 forșpan
 forțare
@@ -5283,7 +5275,6 @@ gripoză
 grisină
 grizare
 grizetă
-grizzly
 grobian
 grofesc
 grofiță
@@ -5298,7 +5289,6 @@ groșiță
 grundui
 grunjos
 grupare
-gruyere
 gruzină
 grâuleț
 grâușor
@@ -5353,7 +5343,6 @@ gutunar
 guturai
 gutural
 guverna
-guyanez
 gvardie
 gâdilat
 gâfâire
@@ -5538,7 +5527,6 @@ hipolog
 hiponim
 hipoxie
 hipozom
-hippysm
 hipuric
 hipurie
 hipurit
@@ -6167,7 +6155,6 @@ karling
 karting
 kasolit
 kendoka
-kenyană
 keramit
 kermesă
 kerosen
@@ -6294,7 +6281,6 @@ legător
 lehuzie
 leicuță
 leiofil
-lekytos
 lemnisc
 lempiră
 lemurii
@@ -6453,7 +6439,6 @@ lizibil
 lizieră
 lizigen
 lițcaie
-lobbysm
 lobelie
 lobular
 locandă
@@ -6776,7 +6761,6 @@ mauresc
 maxilar
 maximal
 maximum
-maxwell
 mazarin
 mazdrac
 mazilaș
@@ -6815,7 +6799,6 @@ megahit
 megalie
 megalit
 megapir
-megapyr
 megaric
 megaron
 megieși
@@ -8112,8 +8095,6 @@ ovoidal
 ovoscop
 ovreică
 ovulist
-owenism
-owenist
 oxaloză
 oxamină
 oxiacid
@@ -8390,7 +8371,6 @@ pelvian
 pemican
 pempant
 penalti
-penalty
 pendula
 pendulă
 penetra
@@ -8665,7 +8645,6 @@ platina
 platină
 platnic
 platoșă
-playboy
 pleasnă
 pleașcă
 plebeic
@@ -9426,11 +9405,6 @@ pășunat
 pățanie
 pățeală
 pățenie
-quakeră
-quartet
-quechua
-quetzal
-quintal
 rabatat
 rabator
 rabinat
@@ -9849,7 +9823,6 @@ ronjant
 ronjare
 ronțăit
 rosbrat
-rosqual
 rostire
 rostral
 rostuit
@@ -9942,7 +9915,6 @@ rutișor
 rușfert
 rușinat
 rușinos
-rwandez
 râcâire
 râmlean
 râmător
@@ -10335,7 +10307,6 @@ seppuku
 septico
 septimă
 septuor
-sequoia
 serafic
 serafim
 seralie
@@ -10406,8 +10377,6 @@ sgârcit
 sgârciu
 shaping
 shoping
-showbiz
-showman
 siamang
 siameză
 sibarit
@@ -10742,7 +10711,6 @@ stagiar
 stambol
 stamini
 stamină
-standby
 stanină
 staniol
 stanțat
@@ -10777,7 +10745,6 @@ sterină
 sternal
 steroid
 stertor
-steward
 stibină
 sticlar
 sticlit
@@ -11013,8 +10980,6 @@ suveran
 suzeran
 svanțih
 svetnic
-swahili
-swingat
 sâmbraș
 sâmbure
 sâmbătă
@@ -11231,7 +11196,6 @@ teocrat
 teologă
 teomorf
 teoremă
-tequila
 teracot
 terapie
 terariu
@@ -11299,7 +11263,6 @@ tigresă
 tigăiță
 tihnire
 tihărie
-tilbury
 tilincă
 tilingă
 tilișcă
@@ -11392,7 +11355,6 @@ toropit
 torpedo
 torpila
 torpilă
-torques
 torsada
 torsadă
 tortiță
@@ -11654,7 +11616,6 @@ tutuire
 tutuniu
 tușieră
 tușinat
-tweeter
 tâlhări
 tâlmace
 tâlmaci
@@ -12269,15 +12230,6 @@ vătămat
 vătășel
 vătășie
 văzător
-walkman
-warcops
-warrant
-wattoră
-weekend
-western
-wolfram
-wurtzit
-wyandot
 xantină
 xantipă
 xantism
@@ -12298,12 +12250,6 @@ xilofag
 xilofil
 xilofon
 xilolit
-yardang
-yemenit
-yoghist
-yoginic
-yterbiu
-ytrifer
 zabiauă
 zablaud
 zablauă

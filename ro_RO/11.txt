@@ -834,7 +834,6 @@ baronarcoză
 baroterapie
 barotropism
 basarabeană
-basedowiană
 basidiospor
 batiestezie
 batigastrie
@@ -845,7 +844,6 @@ bazidiospor
 bazilateral
 beatificare
 beatitudine
-becquerelit
 behaviorism
 behaviorist
 beletristic
@@ -1298,7 +1296,6 @@ cinemometru
 cinerecital
 cinetehnică
 cinevașilea
-cinquecento
 cinsprezece
 ciobotăresc
 ciocolatier
@@ -1927,7 +1924,6 @@ cvasiunanim
 cvincuncial
 cvintesență
 cvintuplare
-cyberspațiu
 cârcimăriță
 cârciumărit
 cârligioară
@@ -2559,7 +2555,6 @@ ecvitațiune
 ecvizetacee
 eczematoasă
 eczematogen
-edelschwein
 educațional
 edulcorație
 efebocrazie
@@ -2901,7 +2896,6 @@ ferodinamic
 ferosiliciu
 feroterapie
 ferovanadiu
-ferowolfram
 fertilitate
 fertilizant
 fertilizare
@@ -4059,7 +4053,6 @@ literatoare
 litoclastie
 litografiat
 loaialitate
-lobbyistică
 localizabil
 locomoțiune
 locotenență
@@ -4413,7 +4406,6 @@ miniaturist
 miniaturiza
 minibaschet
 minibaterie
-minibowling
 minibutelie
 minicartelă
 minicombină
@@ -5145,7 +5137,6 @@ parafrazare
 parafucsină
 paragenetic
 paraglobină
-paraguayană
 paraldehidă
 paraliterar
 paramastită
@@ -6001,8 +5992,6 @@ păpistășesc
 părăgineală
 păstrăvărie
 pătrunzător
-quadrofonic
-quadrofonie
 rabdomanție
 rachetodrom
 radicalistă
@@ -6610,7 +6599,6 @@ sesamoidită
 sexagesimal
 sexualitate
 sexualizare
-seychelleză
 sfagnologie
 sfericitate
 sferofachie
@@ -6798,8 +6786,6 @@ spăimântare
 spălăcioasă
 spălăcitură
 spărgătoare
-squatterism
-squatteriza
 stabiliment
 stabilitate
 stabilivolt
@@ -7562,7 +7548,6 @@ videocaptor
 videocasetă
 videografie
 videomatică
-videoplayer
 videoteatru
 viețuitoare
 viitorologă
@@ -7630,12 +7615,6 @@ vâscozitate
 văcsuitoare
 vălțuitoare
 vătămătoare
-waterbalast
-wattormetru
-wattsecundă
-weismannism
-weismannist
-windsurfing
 xantocromie
 xantodermie
 xantogenare

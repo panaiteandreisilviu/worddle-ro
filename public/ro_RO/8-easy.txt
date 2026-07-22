@@ -201,7 +201,6 @@ brichetă
 briliant
 britanic
 broccoli
-browning
 brutărie
 bucățică
 building
@@ -367,7 +366,6 @@ copiator
 corectat
 corecție
 coreeană
-cornwall
 corporal
 cortizon
 corupție
@@ -728,8 +726,6 @@ gâfâitor
 gânditor
 gălăgios
 handicap
-hardware
-hawaiian
 hepatită
 hidrogen
 hipodrom
@@ -1166,7 +1162,6 @@ plictisi
 plimbare
 plutitor
 plutoniu
-plymouth
 plângere
 plăcintă
 podgorie
@@ -1476,7 +1471,6 @@ smoching
 smântână
 sociabil
 sociopat
-software
 solicita
 somnifer
 somnoros

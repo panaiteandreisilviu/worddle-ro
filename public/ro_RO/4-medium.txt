@@ -92,7 +92,6 @@ bluf
 blum
 bobi
 boci
-body
 boem
 boia
 bold
@@ -235,7 +234,6 @@ dorn
 dota
 drac
 dram
-draw
 dren
 dres
 dric
@@ -246,7 +244,6 @@ duan
 duet
 dună
 duro
-dyke
 dzeu
 dâmb
 dârz
@@ -296,7 +293,6 @@ flip
 flit
 flop
 flor
-flow
 focă
 folk
 foot
@@ -425,7 +421,6 @@ kilo
 kilt
 kimo
 kino
-kiwi
 kore
 koto
 kuba
@@ -438,7 +433,6 @@ lani
 lati
 laur
 lavă
-lazy
 lașă
 leal
 left
@@ -735,7 +729,6 @@ slap
 slav
 slip
 sloi
-slow
 slut
 smoc
 smog
@@ -777,7 +770,6 @@ sulă
 sumo
 sura
 suri
-swap
 sânt
 sârb
 tabu
@@ -814,7 +806,6 @@ tont
 topo
 tora
 tors
-tory
 trac
 trap
 tria
@@ -893,12 +884,6 @@ vrun
 vână
 vârî
 vâsc
-watt
-yală
-yeti
-yoyo
-yuan
-yuko
 zair
 zale
 zare

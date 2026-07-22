@@ -571,7 +571,6 @@ apterigide
 apterigotă
 apuntament
 apuntizare
-aquamanila
 arabistică
 arahnoideu
 arahnologă
@@ -808,7 +807,6 @@ barognozie
 barometrie
 basarabean
 basculator
-basedowian
 basoreliev
 batalionar
 baticardie
@@ -999,7 +997,6 @@ bulucbășie
 bulversare
 bumbăceală
 bumbăcărie
-bundeswehr
 burcușoară
 burduhănos
 burdușeală
@@ -1880,7 +1877,6 @@ damnațiune
 dantelărie
 dantistică
 dantologie
-deadweight
 deaferenta
 debavurare
 debenzolat
@@ -2350,7 +2346,6 @@ donjuanesc
 donjuanism
 dormitoriu
 dospitoare
-downtonian
 doxologhie
 doxometrie
 dozimetrie
@@ -3353,7 +3348,6 @@ hemopoieză
 hemoptizic
 hemoroidal
 hemotoxină
-henrymetru
 hepatalgie
 hepatologă
 hepatotrop
@@ -3933,7 +3927,6 @@ kiribatian
 kitschizat
 knockoutat
 koblenzian
-kuwaitiană
 labferment
 labiovelar
 labirintic
@@ -4184,7 +4177,6 @@ malaxorist
 maldiviană
 maledicție
 malignizat
-mallorquin
 malpoziție
 malthusian
 maltozurie
@@ -4209,7 +4201,6 @@ manilovism
 manometric
 manometrie
 mansardare
-maquisardă
 marcescent
 marcionism
 marcionită
@@ -4397,7 +4388,6 @@ microfloră
 microfonic
 microgamet
 microhenri
-microhenry
 microjoule
 microlitru
 micrologie
@@ -5223,7 +5213,6 @@ parageneză
 parageuzie
 paragnozie
 paragrafie
-paraguayan
 paralactic
 paralelism
 paraleliza
@@ -6087,9 +6076,6 @@ păscătoare
 păstrăvior
 păstrăviță
 pătlăginiu
-quadrienal
-quadrivium
-quidditate
 rabdofobie
 rabdologie
 rabiofobie
@@ -6628,7 +6614,6 @@ sescviplan
 settecento
 severinean
 sexagenară
-seychellez
 sfagnofite
 sfenoidită
 sferenchim
@@ -7706,9 +7691,6 @@ văduvioară
 văietătură
 vălmășeală
 vătămătură
-webermetru
-westfalian
-windkanter
 xantelasmă
 xantinurie
 xantogenat
@@ -7793,7 +7775,6 @@ zimogeneză
 zimotehnie
 zincografă
 zinghenire
-zinnwaldit
 zlătăreasă
 zmuncitură
 zmâncitură
@@ -7823,7 +7804,6 @@ zvânturare
 zvârcolire
 zvârgolire
 zvârlitură
-zwingliană
 zângăitură
 zângănitor
 zârdiceafă

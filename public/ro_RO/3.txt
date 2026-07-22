@@ -100,7 +100,6 @@ bos
 bot
 bou
 box
-boy
 boz
 boș
 boț
@@ -205,7 +204,6 @@ dop
 dor
 dos
 dox
-dry
 dud
 duf
 duh
@@ -246,7 +244,6 @@ ete
 eto
 etă
 eur
-ewe
 exa
 exo
 eză
@@ -304,7 +301,6 @@ gal
 gam
 gap
 gat
-gay
 gaz
 gel
 gem
@@ -434,7 +430,6 @@ kir
 kit
 kob
 kva
-kwh
 lab
 lac
 laf
@@ -678,7 +673,6 @@ pâș
 păi
 păr
 păs
-qua
 rac
 rad
 raf
@@ -879,13 +873,10 @@ vâj
 văl
 văr
 văz
-won
 xen
 xer
 xif
 xil
-yak
-yen
 zad
 zap
 zar

@@ -86,7 +86,6 @@ aconto
 acorda
 acorie
 acosta
-acquis
 acrido
 acrime
 acrire
@@ -1150,7 +1149,6 @@ brahie
 brahio
 brahma
 bramin
-brandy
 branșa
 branșă
 brasaj
@@ -1325,7 +1323,6 @@ butură
 butăși
 buvetă
 bușuma
-bypass
 bâhlit
 bâigui
 bâjbâi
@@ -1537,7 +1534,6 @@ carnaj
 carnal
 carnat
 carnet
-carnyx
 caroia
 carolă
 carosa
@@ -1709,7 +1705,6 @@ chenar
 cherat
 cherci
 cherem
-cherry
 cherub
 chesat
 chesea
@@ -2206,7 +2201,6 @@ covată
 covița
 covrig
 covăsi
-cowboy
 coxită
 cozeur
 coșavă
@@ -2427,8 +2421,6 @@ cvantă
 cvartă
 cvintă
 cvorum
-cyatos
-cyborg
 câinie
 câinos
 câlțos
@@ -3500,7 +3492,6 @@ feeric
 feerie
 felcer
 felidă
-fellow
 felucă
 feluri
 femeie
@@ -3948,7 +3939,6 @@ genian
 genist
 genito
 gentil
-gentry
 genuin
 genune
 geodez
@@ -4188,7 +4178,6 @@ grivnă
 grizat
 groapă
 groază
-groggy
 grohot
 grohăi
 gropan
@@ -4452,7 +4441,6 @@ hostie
 hotdog
 hotnog
 hotărî
-howdah
 hoțesc
 hrincă
 hrisov
@@ -4490,7 +4478,6 @@ hușean
 huțană
 huțulă
 huțuța
-hybris
 hâlpav
 hâlpov
 hânsar
@@ -4924,7 +4911,6 @@ kazahă
 keloid
 kelvin
 kenoză
-kenyan
 kerato
 kermes
 keuper
@@ -4947,8 +4933,6 @@ kouros
 kraken
 kumite
 kurumă
-kwacha
-kwanza
 kârgâz
 labial
 labiat
@@ -5027,7 +5011,6 @@ lavoar
 lavrac
 laxism
 laxist
-layout
 lazane
 lașare
 leagăn
@@ -5227,7 +5210,6 @@ luculă
 luddit
 ludian
 ludism
-ludlow
 luetic
 lugher
 lumbus
@@ -5378,7 +5360,6 @@ manșot
 manție
 maoism
 maoist
-maquis
 marabu
 maramă
 marasm
@@ -5580,7 +5561,6 @@ miilea
 mijire
 mijloc
 mikado
-milady
 miliar
 milieu
 milino
@@ -6073,7 +6053,6 @@ nevoie
 nevoit
 nevrax
 nevrom
-newton
 nichel
 niciun
 nicrom
@@ -6807,7 +6786,6 @@ petiță
 petrel
 petrol
 petzit
-peyotl
 pețiol
 pețire
 pfenig
@@ -6870,7 +6848,6 @@ pinten
 pintre
 pinulă
 pinxit
-pinyin
 piocel
 piogen
 piolet
@@ -6951,7 +6928,6 @@ platou
 platru
 plavcă
 plavie
-player
 plazie
 plașcă
 pleasc
@@ -7347,7 +7323,6 @@ pulman
 pulmon
 pulpar
 pulpos
-pulque
 pulsar
 pumnal
 pumnar
@@ -7477,14 +7452,6 @@ pășuna
 pășune
 pășună
 pățire
-qigong
-quaker
-quasag
-quasar
-quiash
-quieto
-quinoa
-quruch
 rabană
 rabata
 rabate
@@ -7667,7 +7634,6 @@ repezi
 repeți
 repica
 replat
-replay
 replia
 report
 reproș
@@ -7707,7 +7673,6 @@ reșapa
 reșută
 rețetă
 reține
-rhyton
 riboză
 ricana
 ricină
@@ -7720,7 +7685,6 @@ riflui
 riglat
 rigolă
 rihtui
-rimaye
 rimela
 rindea
 rinită
@@ -7794,7 +7758,6 @@ rostru
 rostui
 rotang
 rotare
-rotary
 rotașă
 rotilă
 rotire
@@ -7804,7 +7767,6 @@ rotund
 rourat
 rouros
 rovină
-roylon
 rozalb
 rozală
 rozasă
@@ -7856,7 +7818,6 @@ rușală
 rușfet
 rușina
 rușine
-ryokan
 râcâit
 râmnic
 râmnit
@@ -8051,7 +8012,6 @@ schiză
 schița
 schiță
 schuss
-schwyz
 sciado
 scinda
 scinti
@@ -8227,8 +8187,6 @@ sfătui
 sgârci
 shaker
 shekel
-shimmy
-shoddy
 shogun
 shoran
 sialic
@@ -8481,7 +8439,6 @@ spălat
 spăsit
 spătar
 spătos
-squash
 stabil
 stabor
 stacan
@@ -8517,7 +8474,6 @@ status
 statut
 statuă
 stauro
-stayer
 stazie
 stație
 steato
@@ -8751,8 +8707,6 @@ sutime
 sutura
 sutură
 sveter
-swinga
-switch
 sâcret
 sâcâit
 sâială
@@ -9130,7 +9084,6 @@ tremor
 tremur
 trenaj
 trenci
-trendy
 trenuț
 trepan
 tretin
@@ -9280,7 +9233,6 @@ tușare
 tușică
 tușier
 tușina
-twista
 tâlcui
 tâlhar
 tâmpit
@@ -9518,7 +9470,6 @@ vagini
 vagino
 vagină
 vaicăr
-vaisya
 vajnic
 valadă
 valahă
@@ -9829,17 +9780,6 @@ vătăji
 vătăma
 vătăși
 văzduh
-wampum
-wapiti
-warant
-watman
-welter
-whisky
-wigwam
-window
-wombat
-woofer
-wurzit
 xantom
 xenism
 xeroxa
@@ -9848,14 +9788,6 @@ xifoid
 xiloid
 xiloză
 xoanon
-yakuza
-yankeu
-yeoman
-yesman
-yoghin
-youyou
-yttriu
-yuppie
 zabală
 zablău
 zabrac

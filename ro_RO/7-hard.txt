@@ -730,7 +730,6 @@ barofob
 baronie
 bartiță
 basamac
-basedow
 basidie
 bastarn
 bastidă
@@ -1758,7 +1757,6 @@ cornier
 cornist
 corniză
 corniță
-cornwal
 cornări
 coroiaj
 coroidă
@@ -3560,7 +3558,6 @@ gutieră
 gutifer
 gutoasă
 gutunar
-guyanez
 gvardie
 gâfâire
 gâgâire
@@ -3691,7 +3688,6 @@ hipogin
 hipolog
 hiponim
 hipozom
-hippysm
 hipuric
 hipurie
 hipurit
@@ -4103,7 +4099,6 @@ kantizm
 karling
 kasolit
 kendoka
-kenyană
 keramit
 kermesă
 khamsin
@@ -4197,7 +4192,6 @@ legător
 lehuzie
 leicuță
 leiofil
-lekytos
 lemnisc
 lempiră
 lenevos
@@ -4305,7 +4299,6 @@ lizereu
 lizeuză
 lizigen
 lițcaie
-lobbysm
 lobelie
 lobular
 locandă
@@ -4524,7 +4517,6 @@ megahit
 megalie
 megalit
 megapir
-megapyr
 megaric
 megaron
 megieși
@@ -5402,8 +5394,6 @@ ovoidal
 ovoscop
 ovreică
 ovulist
-owenism
-owenist
 oxaloză
 oxamină
 oxiacid
@@ -6245,7 +6235,6 @@ păuniță
 păștiță
 pățeală
 pățenie
-quakeră
 rabatat
 rabator
 rabinat
@@ -6487,7 +6476,6 @@ rondină
 ronjant
 ronjare
 rosbrat
-rosqual
 rostral
 rostuit
 rotalit
@@ -6546,7 +6534,6 @@ rutinar
 rutinat
 rutișor
 rușfert
-rwandez
 râcâire
 râmlean
 râmător
@@ -7219,7 +7206,6 @@ suveică
 suzeran
 svanțih
 svetnic
-swingat
 sâmbraș
 sâneață
 sângeac
@@ -7489,7 +7475,6 @@ torcret
 tordant
 torefia
 toropit
-torques
 torsada
 torsadă
 tortiță
@@ -8092,10 +8077,6 @@ vătăjie
 vătăman
 vătășel
 vătășie
-warcops
-wattoră
-wurtzit
-wyandot
 xantină
 xantipă
 xantism
@@ -8114,11 +8095,6 @@ xifofor
 xilofag
 xilofil
 xilolit
-yardang
-yoghist
-yoginic
-yterbiu
-ytrifer
 zabiauă
 zablaud
 zablauă

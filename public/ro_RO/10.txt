@@ -730,7 +730,6 @@ aptitudine
 apuntament
 apuntizare
 apărătoare
-aquamanila
 arabistică
 arahnoideu
 arahnologă
@@ -989,7 +988,6 @@ azvârlitor
 așijderele
 așijderile
 babilonian
-babysitter
 baciliform
 background
 bactericid
@@ -1034,7 +1032,6 @@ basarabean
 baschetbal
 basculantă
 basculator
-basedowian
 basorelief
 basoreliev
 batalionar
@@ -1266,7 +1263,6 @@ bulversant
 bulversare
 bumbăceală
 bumbăcărie
-bundeswehr
 bunăvoință
 burcușoară
 burduhănos
@@ -1597,7 +1593,6 @@ cetățeancă
 cetățenesc
 challenger
 chambertin
-chardonnay
 charleston
 chartreuse
 checheriță
@@ -2242,7 +2237,6 @@ coprostază
 coprozoare
 coptologie
 coptoroșit
-copywriter
 coraliform
 coraportor
 cordelieră
@@ -2535,8 +2529,6 @@ dansatoare
 dantelărie
 dantistică
 dantologie
-darwinistă
-deadweight
 deaferenta
 debarasare
 debarcader
@@ -3214,7 +3206,6 @@ donjuanism
 dormitoare
 dormitoriu
 dospitoare
-downtonian
 doxologhie
 doxometrie
 dozimetrie
@@ -4454,7 +4445,6 @@ hemoptizie
 hemoroidal
 hemostatic
 hemotoxină
-henrymetru
 hepatalgie
 hepatologă
 hepatotrop
@@ -5248,7 +5238,6 @@ kanamicină
 kantianism
 keratoscop
 kerdometru
-keynesiană
 kharidjism
 kharidjită
 kidnapping
@@ -5264,7 +5253,6 @@ kiribatian
 kitschizat
 knockoutat
 koblenzian
-kuwaitiană
 labferment
 labilitate
 labiovelar
@@ -5578,7 +5566,6 @@ malaxorist
 maldiviană
 maledicție
 malignizat
-mallorquin
 malpoziție
 malthusian
 maltozurie
@@ -5615,7 +5602,6 @@ manometric
 manometrie
 mansardare
 manuscript
-maquisardă
 maraschino
 maratonist
 marcatoare
@@ -5847,7 +5833,6 @@ microfonic
 microfonie
 microgamet
 microhenri
-microhenry
 microjoule
 microlitru
 micrologie
@@ -6487,7 +6472,6 @@ nevropatie
 nevrotomie
 nevârstnic
 nevăstuică
-newtoniană
 neîmplinit
 neîndemână
 neîndurare
@@ -6935,7 +6919,6 @@ parageneză
 parageuzie
 paragnozie
 paragrafie
-paraguayan
 paralactic
 paralelism
 paraleliza
@@ -8086,9 +8069,6 @@ păstrăvior
 păstrăviță
 pătlăginiu
 pătrundere
-quadrienal
-quadrivium
-quidditate
 rabdofobie
 rabdologie
 rabiofobie
@@ -8855,7 +8835,6 @@ settecento
 severinean
 severitate
 sexagenară
-seychellez
 sfagnofite
 sfenoidită
 sferenchim
@@ -9172,7 +9151,6 @@ sterilizat
 sternalgie
 sterpătură
 stetometru
-stewardesă
 sticluliță
 stigmatism
 stigmatiza
@@ -9496,7 +9474,6 @@ teatralist
 teatraliza
 teatrologă
 teatrotecă
-technology
 tectologie
 tecuceancă
 tegumentar
@@ -10260,10 +10237,6 @@ văicăreală
 văietătură
 vălmășeală
 vătămătură
-wagneriană
-webermetru
-westfalian
-windkanter
 xantelasmă
 xantinurie
 xantogenat
@@ -10367,7 +10340,6 @@ zimogeneză
 zimotehnie
 zincografă
 zinghenire
-zinnwaldit
 zlătăreasă
 zmuncitură
 zmâncitură
@@ -10398,7 +10370,6 @@ zvânturare
 zvârcolire
 zvârgolire
 zvârlitură
-zwingliană
 zângăitură
 zângănitor
 zârdiceafă

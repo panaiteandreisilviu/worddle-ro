@@ -129,7 +129,6 @@ chiromanție
 chivernisit
 cicatricial
 cicatrizare
-cinquecento
 ciocolatier
 ciocănitură
 ciondăneală
@@ -248,7 +247,6 @@ cumpărătură
 cursivitate
 cusătoreasă
 cutezătoare
-cyberspațiu
 cămătăreasă
 cățărătoare
 dactilograf
@@ -975,7 +973,6 @@ verificator
 viabilitate
 videocameră
 videocasetă
-videoplayer
 vinificator
 virusologie
 viscozitate
@@ -986,7 +983,6 @@ vrăjitoresc
 vulcanizare
 vâscozitate
 vătămătoare
-windsurfing
 zdruncinare
 zmângăleală
 zoroastrian

@@ -46,7 +46,6 @@ acolea
 acolie
 aconta
 acorie
-acquis
 acrido
 acrime
 acrire
@@ -924,7 +923,6 @@ caridă
 carion
 carios
 carmac
-carnyx
 caroia
 carosa
 carota
@@ -1476,7 +1474,6 @@ cvadru
 cvantă
 cvartă
 cvintă
-cyatos
 câinie
 câinos
 câlțos
@@ -2751,7 +2748,6 @@ horșaf
 horțiș
 hostie
 hotnog
-howdah
 hoțesc
 hrincă
 hrisov
@@ -2783,7 +2779,6 @@ hușean
 huțană
 huțulă
 huțuța
-hybris
 hâlpav
 hâlpov
 hânsar
@@ -3065,7 +3060,6 @@ kitara
 klippă
 kouros
 kurumă
-kwacha
 kârgâz
 labial
 labiat
@@ -4250,7 +4244,6 @@ petică
 petilă
 petiță
 petzit
-peyotl
 pețiol
 pețire
 pfenig
@@ -4289,7 +4282,6 @@ pinolă
 pintre
 pinulă
 pinxit
-pinyin
 piocel
 piogen
 pioree
@@ -4562,7 +4554,6 @@ pulman
 pulmon
 pulpar
 pulpos
-pulque
 pumnar
 pumnaș
 puncer
@@ -4634,11 +4625,6 @@ pășire
 pășuna
 pășună
 pățire
-qigong
-quasag
-quiash
-quieto
-quruch
 rabană
 rabata
 rabate
@@ -4753,7 +4739,6 @@ rezina
 rezită
 reșapa
 reșută
-rhyton
 riboză
 ricana
 ridare
@@ -4761,7 +4746,6 @@ ridger
 riflui
 riglat
 rihtui
-rimaye
 rimela
 rindea
 rinsou
@@ -4820,7 +4804,6 @@ rotilă
 rourat
 rouros
 rovină
-roylon
 rozalb
 rozală
 rozasă
@@ -4851,7 +4834,6 @@ rusulă
 rutean
 rușală
 rușfet
-ryokan
 râmnic
 râmnit
 rândaș
@@ -4963,7 +4945,6 @@ schimă
 schiza
 schiză
 schuss
-schwyz
 sciado
 scinda
 scinti
@@ -5058,7 +5039,6 @@ sfârlă
 sfărma
 sfătos
 sgârci
-shoddy
 shoran
 sialic
 sialie
@@ -5234,7 +5214,6 @@ stater
 statua
 statuă
 stauro
-stayer
 stazie
 steato
 steavă
@@ -5365,7 +5344,6 @@ sursur
 surtuc
 susean
 susetă
-swinga
 sâcret
 sâială
 sâmbră
@@ -5685,7 +5663,6 @@ tușare
 tușică
 tușier
 tușina
-twista
 tâlcui
 târboc
 târcol
@@ -5835,7 +5812,6 @@ vagant
 vagini
 vagino
 vaicăr
-vaisya
 valadă
 valahă
 valent
@@ -6020,12 +5996,6 @@ vătuie
 vătuit
 vătăji
 vătăși
-wapiti
-warant
-watman
-welter
-woofer
-wurzit
 xantom
 xenism
 xeroxa
@@ -6033,9 +6003,6 @@ xeroză
 xiloid
 xiloză
 xoanon
-yesman
-youyou
-yttriu
 zabală
 zablău
 zabrac

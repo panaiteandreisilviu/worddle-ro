@@ -784,7 +784,6 @@ febril
 feeric
 feerie
 felcer
-fellow
 fenian
 ferber
 fereca
@@ -896,7 +895,6 @@ gelato
 genere
 geneză
 genist
-gentry
 geolog
 gerbil
 germen
@@ -939,7 +937,6 @@ grilaj
 grindă
 gripal
 gripat
-groggy
 grohăi
 gropar
 grosso
@@ -1097,7 +1094,6 @@ kabuki
 kaizer
 kamala
 karibu
-kenyan
 kermes
 kevlar
 kiefer
@@ -1107,7 +1103,6 @@ kitsch
 kobold
 kraken
 kumite
-kwanza
 lactat
 lactic
 lacună
@@ -1123,7 +1118,6 @@ lapsus
 lariță
 lasciv
 latent
-layout
 lașare
 lector
 lecuit
@@ -1168,7 +1162,6 @@ lovele
 lovire
 lucios
 lucire
-ludlow
 lumesc
 lungan
 lungit
@@ -1663,9 +1656,6 @@ păscut
 păsuit
 pătrar
 pășune
-quaker
-quasar
-quinoa
 racola
 racord
 radial
@@ -1710,7 +1700,6 @@ renghi
 renova
 repera
 repezi
-replay
 report
 reproș
 repune
@@ -1740,7 +1729,6 @@ rocker
 rococo
 români
 ronțăi
-rotary
 rotiță
 rotulă
 rozetă
@@ -1845,7 +1833,6 @@ sfială
 sfârâi
 shaker
 shekel
-shimmy
 shogun
 siamez
 sictir
@@ -1955,7 +1942,6 @@ sutană
 sutime
 sutura
 sveter
-switch
 sâcâit
 sânger
 sâsâit
@@ -2058,7 +2044,6 @@ trasor
 treflă
 tremor
 trenci
-trendy
 trezie
 triadă
 tribun
@@ -2217,14 +2202,7 @@ văsări
 vătrai
 vătăma
 văzduh
-wampum
-wigwam
-window
-wombat
 xifoid
-yeoman
-yoghin
-yuppie
 zahara
 zamfir
 zbiera

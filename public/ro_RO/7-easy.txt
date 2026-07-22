@@ -190,7 +190,6 @@ bolnavă
 bolovan
 bordură
 botezat
-bowling
 boșorog
 briceag
 brigadă
@@ -388,7 +387,6 @@ coridor
 coroană
 corăbia
 costiță
-country
 covrigi
 coșciug
 cracare
@@ -729,7 +727,6 @@ gravidă
 grațios
 grecesc
 grenadă
-grizzly
 grohăit
 grosime
 grotesc
@@ -943,7 +940,6 @@ matinal
 matrice
 maxilar
 maximum
-maxwell
 mecanic
 medalia
 medalie
@@ -1192,7 +1188,6 @@ planetă
 plantat
 plastic
 platină
-playboy
 plecare
 plesnit
 plimbat
@@ -1542,7 +1537,6 @@ stareță
 statică
 statuie
 statură
-steward
 stimula
 stoarce
 stocare
@@ -1604,7 +1598,6 @@ telepat
 temelie
 temniță
 tentant
-tequila
 terapie
 teribil
 termina
@@ -1734,9 +1727,6 @@ vulgară
 vânzare
 vânător
 vărsare
-weekend
-western
-wolfram
 zdravăn
 zdrobit
 zecelea

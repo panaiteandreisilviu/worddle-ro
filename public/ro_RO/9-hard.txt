@@ -1060,8 +1060,6 @@ bituminit
 bivalență
 bivitelin
 blanchetă
-blanquism
-blanquist
 blastocel
 blastocit
 blastofor
@@ -2223,7 +2221,6 @@ cvietistă
 cvintolet
 cvintupla
 cvintuplu
-cybercafe
 câlțișori
 câmpeancă
 câmpenesc
@@ -3145,7 +3142,6 @@ epizootic
 epizootie
 epuizabil
 epuizment
-equisetum
 erbicidat
 erborizat
 eremitism
@@ -3263,7 +3259,6 @@ excitator
 excoriere
 execrație
 exencefal
-exequatur
 exhaustor
 exhibiție
 exhumație
@@ -3386,7 +3381,6 @@ federativ
 federvais
 felceriță
 feldvebăl
-feldwebăl
 felendreș
 feleștioc
 feliurime
@@ -4006,7 +4000,6 @@ hecatombă
 hectograf
 hectogram
 hectopiez
-hectowatt
 hegeliană
 hegemonic
 hegemonie
@@ -4584,7 +4577,6 @@ jaborandi
 jabotieră
 jachetuță
 jachețică
-jacquerie
 jamahirie
 janghinos
 jansenism
@@ -4634,8 +4626,6 @@ kammerton
 katamaran
 katharsis
 kenofobie
-keynesian
-keynesism
 kharidjit
 kharigism
 kidnaping
@@ -4657,7 +4647,6 @@ knockouta
 krennerit
 kronprinz
 kungurian
-kuwaitian
 labializa
 labirinto
 laburistă
@@ -4706,8 +4695,6 @@ latinofon
 latinoman
 latorfian
 lavalieră
-lawrenciu
-lawrențiu
 lefușoară
 legalistă
 legatorie
@@ -4927,8 +4914,6 @@ majorantă
 malacofil
 malacolog
 malaguena
-malawiană
-malayalam
 maldivian
 maleficiu
 maligmată
@@ -4959,7 +4944,6 @@ mansardat
 manteluță
 manutanță
 manșonare
-maquisard
 marasmină
 marchidan
 marchitan
@@ -5066,7 +5050,6 @@ mentonier
 menșevică
 menșevism
 mepacrină
-mercalloy
 mercaptan
 merceolog
 merceriza
@@ -5172,7 +5155,6 @@ microtidă
 microtron
 microundă
 microvolt
-microwatt
 microzoar
 microzonă
 micsandră
@@ -5191,7 +5173,6 @@ mijlocire
 miliamper
 milicurie
 milihenri
-milihenry
 milităroi
 milițiană
 milogeală
@@ -5227,7 +5208,6 @@ mioplasmă
 miorcăire
 mioritmie
 miosarcom
-miquelete
 mirabilit
 miresmare
 miriagram
@@ -6296,7 +6276,6 @@ peritomie
 peritoneo
 periurban
 perișoară
-permalloy
 permeanță
 permendur
 perminvar
@@ -7013,10 +6992,6 @@ pătimitor
 pătlăgică
 pătăranie
 pășuneală
-quakerism
-quaternio
-quebracho
-quiproquo
 rabarbură
 rabotoare
 racemifer
@@ -7718,7 +7693,6 @@ septevrie
 septiform
 septilion
 sepulcral
-sequenser
 serafimic
 seralistă
 seraschir
@@ -8125,7 +8099,6 @@ stupitură
 sturluiba
 sturzișor
 sturzuleț
-styroflex
 stâlceală
 stâlpișor
 stâlpuleț
@@ -8228,7 +8201,6 @@ supergreu
 superlong
 supernavă
 superpune
-supershow
 superston
 supertanc
 supertren
@@ -8362,7 +8334,6 @@ taxodontă
 taxologie
 taxonomic
 taxonomie
-taylorism
 teandrism
 teatrolog
 tebecistă
@@ -9029,15 +9000,6 @@ vălțuitor
 vărguliță
 vărsătură
 vătmăniță
-wagnerism
-wahhabism
-waterpolo
-wattmetru
-werfenian
-wolframat
-wolframic
-wolframit
-wyandotte
 xantoclor
 xantoderm
 xantofilă
@@ -9063,7 +9025,6 @@ xilologie
 xilometru
 xilotipie
 xilotomie
-yohimbină
 zacarisit
 zaharifer
 zaharigen
@@ -9184,7 +9145,6 @@ zvâcneală
 zvâcnitor
 zvânturat
 zvăpăiere
-zwinglian
 zâmbitură
 zângănire
 zânișoară

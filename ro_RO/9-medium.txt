@@ -163,7 +163,6 @@ avertizor
 aviatoare
 aviditate
 avocățesc
-ayatollah
 azvârlire
 azvârlită
 așezământ
@@ -403,7 +402,6 @@ conțopist
 copertină
 copolimer
 copulație
-copyright
 cordelină
 corectură
 coreeancă
@@ -475,9 +473,6 @@ daltonism
 daltonist
 damblagit
 damigeană
-darwinian
-darwinism
-darwinist
 debandadă
 debordant
 debusolat
@@ -640,7 +635,6 @@ dușmănesc
 dădăceală
 dărăpănat
 eclampsie
-edelweiss
 edificare
 education
 efectuare
@@ -727,7 +721,6 @@ fandosită
 faringian
 faringită
 fatalistă
-feldwebel
 femeiușcă
 feniciană
 ferestrău
@@ -954,7 +947,6 @@ instigare
 insulinom
 insurgent
 integramă
-intercity
 interfază
 interimat
 internaut
@@ -992,8 +984,6 @@ joncțiune
 jonglerie
 jupâneasă
 kilohertz
-knockdown
-kuweitian
 laborantă
 lacerație
 laitmotiv
@@ -1047,7 +1037,6 @@ maharajah
 maidaneză
 maimuțări
 majusculă
-malaysian
 mandatară
 mandolină
 manevrare
@@ -1220,7 +1209,6 @@ nevolnică
 nevralgic
 nevralgie
 nevăzător
-newtonian
 neîmpăcat
 neîndoios
 neîndurat
@@ -1622,7 +1610,6 @@ robustețe
 rogatorie
 romantiza
 românește
-roquefort
 rotiserie
 rotunjime
 rotunjire
@@ -1986,8 +1973,6 @@ vânturare
 văcăreasă
 vărsământ
 vătămător
-wagnerian
-wehrmacht
 xenofobie
 zaharisit
 zbuciumat

@@ -139,7 +139,6 @@ biografie
 blasfemie
 blestemat
 bleumarin
-bodyguard
 boschetar
 bosumflat
 braconier
@@ -614,7 +613,6 @@ gospodină
 gramatică
 grandoare
 gravitate
-greyhound
 grădiniță
 gustărică
 guvernare

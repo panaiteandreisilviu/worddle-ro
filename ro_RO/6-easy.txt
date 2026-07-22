@@ -186,7 +186,6 @@ boogie
 borcan
 bordel
 boston
-brandy
 branșa
 branșă
 brazdă
@@ -213,7 +212,6 @@ bunică
 burete
 burlac
 busolă
-bypass
 bâlbâi
 bântui
 bârlog
@@ -281,7 +279,6 @@ certat
 cetate
 chelie
 chemat
-cherry
 chiflă
 chimic
 chimie
@@ -355,7 +352,6 @@ cosmos
 costum
 cotlet
 covrig
-cowboy
 coșmar
 craniu
 crater
@@ -384,7 +380,6 @@ curând
 curăța
 cutter
 cuvânt
-cyborg
 câmpie
 cândva
 cântat
@@ -821,7 +816,6 @@ maniac
 mantie
 manual
 manție
-maquis
 marcaj
 marcat
 marcia
@@ -857,7 +851,6 @@ messer
 metodă
 metrou
 mijloc
-milady
 milion
 milord
 mineri
@@ -946,7 +939,6 @@ nestor
 neutru
 nevoie
 nevoit
-newton
 nichel
 niciun
 nimeni
@@ -1078,7 +1070,6 @@ planta
 plantă
 plasmă
 platou
-player
 plecat
 pliant
 plimba
@@ -1359,7 +1350,6 @@ spirit
 spital
 spring
 spălat
-squash
 stabil
 stadiu
 stafie
@@ -1588,9 +1578,6 @@ vârstă
 vârtej
 văduvă
 vărsat
-whisky
-yakuza
-yankeu
 zburat
 zbătut
 zdrobi

@@ -1137,7 +1137,6 @@ axiomatic
 axiometru
 axometrie
 axoplasmă
-ayatollah
 azbestoză
 azigomorf
 azigospor
@@ -1406,8 +1405,6 @@ bivitelin
 bizantină
 bizarerie
 blanchetă
-blanquism
-blanquist
 blasfemia
 blasfemie
 blastocel
@@ -1435,7 +1432,6 @@ bocceluță
 bocitoare
 bocăneală
 bodogănit
-bodyguard
 bogomilic
 boicotare
 boiereasă
@@ -2680,7 +2676,6 @@ coptătură
 copulativ
 copulator
 copulație
-copyright
 copărtașă
 coracoidă
 coralieră
@@ -3002,7 +2997,6 @@ cvietistă
 cvintolet
 cvintupla
 cvintuplu
-cybercafe
 câlțișori
 câmpeancă
 câmpenesc
@@ -3104,9 +3098,6 @@ dantelură
 danteluță
 dantologă
 danturare
-darwinian
-darwinism
-darwinist
 dascaleci
 datorință
 datornică
@@ -4096,7 +4087,6 @@ ecvipajie
 eczamplar
 eczecutăr
 eczematos
-edelweiss
 edentație
 edificare
 edilitate
@@ -4311,7 +4301,6 @@ epizootic
 epizootie
 epuizabil
 epuizment
-equisetum
 eradicare
 erbicidat
 erborizat
@@ -4477,7 +4466,6 @@ execrație
 executant
 executare
 exencefal
-exequatur
 exercițiu
 exfoliant
 exfoliere
@@ -4664,8 +4652,6 @@ federație
 federvais
 felceriță
 feldvebăl
-feldwebel
-feldwebăl
 felendreș
 feleștioc
 feliurime
@@ -5365,7 +5351,6 @@ grenadian
 grenadier
 grenadină
 greunatic
-greyhound
 grimeluță
 grisaille
 grizonant
@@ -5476,7 +5461,6 @@ hecatombă
 hectograf
 hectogram
 hectopiez
-hectowatt
 hedonistă
 hegeliană
 hegemonic
@@ -6120,7 +6104,6 @@ interarab
 intercala
 interceda
 intercede
-intercity
 interclub
 interdict
 interesat
@@ -6299,7 +6282,6 @@ jabotieră
 jacaranda
 jachetuță
 jachețică
-jacquerie
 jamahirie
 jamaicană
 janghinos
@@ -6361,8 +6343,6 @@ kammerton
 katamaran
 katharsis
 kenofobie
-keynesian
-keynesism
 kharidjit
 kharigism
 kidnaping
@@ -6382,13 +6362,10 @@ kitschiza
 kittsiană
 klingerit
 knockdaun
-knockdown
 knockouta
 krennerit
 kronprinz
 kungurian
-kuwaitian
-kuweitian
 labializa
 labirinto
 laborantă
@@ -6445,8 +6422,6 @@ latinofon
 latinoman
 latorfian
 lavalieră
-lawrenciu
-lawrențiu
 lealitate
 lefușoară
 legalistă
@@ -6736,9 +6711,6 @@ majusculă
 malacofil
 malacolog
 malaguena
-malawiană
-malayalam
-malaysian
 maldivian
 maleficiu
 maligmată
@@ -6779,7 +6751,6 @@ mantinelă
 manuscris
 manutanță
 manșonare
-maquisard
 marasmină
 marchidan
 marchitan
@@ -6932,7 +6903,6 @@ menșevism
 menținere
 menționat
 mepacrină
-mercalloy
 mercantil
 mercaptan
 mercenară
@@ -7065,7 +7035,6 @@ microtidă
 microtron
 microundă
 microvolt
-microwatt
 microzoar
 microzonă
 micsandră
@@ -7086,7 +7055,6 @@ miliamper
 miliardar
 milicurie
 milihenri
-milihenry
 mililitru
 milimetru
 milionară
@@ -7139,7 +7107,6 @@ mioplasmă
 miorcăire
 mioritmie
 miosarcom
-miquelete
 mirabilis
 mirabilit
 miraculos
@@ -7787,7 +7754,6 @@ nevropter
 nevrotică
 nevătămat
 nevăzător
-newtonian
 nezdravăn
 neîmpăcat
 neînceput
@@ -8632,7 +8598,6 @@ peritoneo
 peritoneu
 periurban
 perișoară
-permalloy
 permanent
 permeabil
 permeanță
@@ -9639,10 +9604,6 @@ pătrunjel
 pătăranie
 păzitoare
 pășuneală
-quakerism
-quaternio
-quebracho
-quiproquo
 rabarbură
 rabatabil
 rabdomiom
@@ -10175,7 +10136,6 @@ roneotipa
 rongalită
 ronțăială
 ropotitor
-roquefort
 rostogoli
 rostuitor
 rotacizat
@@ -10647,7 +10607,6 @@ septiform
 septilion
 sepulcral
 sepultură
-sequenser
 serafimic
 seralistă
 seraschir
@@ -11189,7 +11148,6 @@ stupitură
 sturluiba
 sturzișor
 sturzuleț
-styroflex
 stâlceală
 stâlpișor
 stâlpuleț
@@ -11341,7 +11299,6 @@ superlong
 supernavă
 supernovă
 superpune
-supershow
 superstar
 superston
 supertanc
@@ -11531,7 +11488,6 @@ taxodontă
 taxologie
 taxonomic
 taxonomie
-taylorism
 teandrism
 teatrolog
 tebecistă
@@ -12433,17 +12389,6 @@ vărsământ
 vărsătură
 vătmăniță
 vătămător
-wagnerian
-wagnerism
-wahhabism
-waterpolo
-wattmetru
-wehrmacht
-werfenian
-wolframat
-wolframic
-wolframit
-wyandotte
 xantoclor
 xantoderm
 xantofilă
@@ -12470,7 +12415,6 @@ xilologie
 xilometru
 xilotipie
 xilotomie
-yohimbină
 zacarisit
 zaharifer
 zaharigen
@@ -12607,7 +12551,6 @@ zvâcneală
 zvâcnitor
 zvânturat
 zvăpăiere
-zwinglian
 zâmbitură
 zângănire
 zânișoară

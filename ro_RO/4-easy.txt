@@ -41,7 +41,6 @@ avea
 avut
 azil
 baba
-baby
 baga
 baie
 bang
@@ -300,7 +299,6 @@ june
 jura
 just
 king
-lady
 ladă
 lama
 lame
@@ -344,7 +342,6 @@ marș
 masa
 masă
 mate
-maya
 meci
 mele
 mere
@@ -515,9 +512,7 @@ seif
 semn
 sens
 sete
-sexy
 sfat
-show
 sida
 simț
 sine
@@ -644,10 +639,6 @@ vrea
 vâna
 vânt
 vârf
-wild
-yard
-yoga
-york
 zbor
 zece
 zero

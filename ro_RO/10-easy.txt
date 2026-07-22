@@ -84,7 +84,6 @@ autostradă
 autoturism
 aventurier
 avertizare
-babysitter
 balustradă
 beneficiar
 bestseller
@@ -140,7 +139,6 @@ ceremonial
 certificat
 cerșetoare
 challenger
-chardonnay
 charleston
 chelneriță
 cheltuială
@@ -955,7 +953,6 @@ stagiatură
 statistică
 staționare
 sterilizat
-stewardesă
 stimulator
 stomatolog
 strangulat
@@ -993,7 +990,6 @@ sărbătoare
 sărbătorit
 sărăcăcios
 tahicardie
-technology
 tehnologic
 tehnologie
 telemetrie

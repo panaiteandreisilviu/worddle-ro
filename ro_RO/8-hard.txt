@@ -808,7 +808,6 @@ babeurre
 babirusa
 babuvism
 babuvist
-babyschi
 bacanală
 baccelit
 baciform
@@ -1125,7 +1124,6 @@ bronhial
 bronhiom
 bronzier
 brotăcel
-brownian
 broștesc
 bruitism
 brumatic
@@ -1221,8 +1219,6 @@ butonare
 butășire
 buzunări
 buștihan
-byronian
-byronism
 bâjbâire
 bâlbâire
 bârcoace
@@ -1399,7 +1395,6 @@ carbamic
 carbinol
 carboavă
 carbogen
-carboloy
 carbonar
 carbonil
 carboxil
@@ -2899,7 +2894,6 @@ dunărean
 duodecim
 duodiodă
 duracril
-duracryl
 durifica
 durmitor
 duroflex
@@ -3288,7 +3282,6 @@ euritmie
 euritrof
 euroarab
 eurocent
-eurocity
 eurocrat
 europidă
 europium
@@ -3403,7 +3396,6 @@ faunistă
 faurmaur
 faustbal
 faustian
-fayolism
 fazitron
 fazmetru
 fazotron
@@ -3471,7 +3463,6 @@ filicale
 filicină
 filigean
 filimică
-filioque
 filipică
 filmolog
 filoelen
@@ -4009,7 +4000,6 @@ gurluire
 gustător
 gutiferă
 guvernor
-guyaneză
 gușuliță
 gâdilare
 gâfâială
@@ -4146,7 +4136,6 @@ higienic
 higrofil
 higrofob
 himation
-hinayana
 hindichi
 hinduist
 hipalagă
@@ -4174,7 +4163,6 @@ hiposmie
 hipostil
 hipotaxă
 hipotecă
-hippyism
 hiragana
 hiritisi
 hirotoni
@@ -4187,7 +4175,6 @@ historia
 histotom
 histrion
 hobanare
-hobbyist
 hocheton
 hodolean
 hodorogi
@@ -4537,7 +4524,6 @@ izotonie
 izotopie
 izraelit
 izvodire
-jacquier
 jacuitor
 jainistă
 jalonare
@@ -4619,7 +4605,6 @@ khervari
 kidnapat
 kieserit
 kilobait
-kilobyte
 kilojoul
 kilotonă
 kilovolt
@@ -4799,8 +4784,6 @@ litorină
 liturgic
 livrabil
 lizozimă
-lobbying
-lobbyism
 lobelină
 lobulită
 localism
@@ -4818,7 +4801,6 @@ logopedă
 logoreic
 logothet
 loialism
-lokayata
 lollarzi
 lombarda
 lombardă
@@ -4924,7 +4906,6 @@ magnezic
 magnezie
 magnezit
 magnicid
-mahayana
 mahmudea
 mahmurie
 mahogani
@@ -4939,7 +4920,6 @@ malachit
 malaieză
 malandră
 malarică
-malawian
 malaxare
 maleolar
 malonest
@@ -5063,7 +5043,6 @@ megaspor
 megaterm
 megatonă
 megavolt
-megawatt
 megieșie
 meglenit
 meharist
@@ -5221,7 +5200,6 @@ milezimă
 miliaria
 miliariu
 milivolt
-miliwatt
 millerit
 milogire
 miluitor
@@ -5237,7 +5215,6 @@ minijupă
 minioină
 miniscaf
 minischi
-minishow
 minitest
 minorant
 mințitor
@@ -6207,7 +6184,6 @@ paradosi
 paradrom
 parafare
 parafiză
-paraflow
 paragogă
 paralaxă
 parament
@@ -7049,9 +7025,6 @@ pătucean
 pătulire
 păunărie
 pășunare
-quaestor
-quolibet
-quotient
 rabatare
 rabatere
 rabinism
@@ -7090,7 +7063,6 @@ ranforsa
 raniform
 rantoala
 ranversa
-rapakiwi
 rapsodic
 rarifica
 ratatina
@@ -7378,7 +7350,6 @@ rubeolos
 ruberoid
 rubiacee
 rubicond
-rubylith
 rudiment
 rudăresc
 rufșoară
@@ -7413,7 +7384,6 @@ rutinier
 rutinism
 rușinare
 rușuliță
-rwandeză
 râcâială
 râmnitor
 râmătură
@@ -8225,9 +8195,6 @@ susurare
 suzerană
 svilcoli
 svârcoli
-swapping
-swingare
-swingman
 sâmbovin
 sâmburel
 sâmburos
@@ -8354,7 +8321,6 @@ telemarc
 teleozom
 telerama
 telescaf
-teleshow
 telestih
 teletecă
 teletext
@@ -8395,7 +8361,6 @@ terasetă
 teratism
 teratoid
 teratron
-terawatt
 terciuit
 terebint
 terfelog
@@ -8711,7 +8676,6 @@ tuvaluan
 tușerism
 tușinare
 tușitură
-twistare
 tâlcuire
 tâlhărea
 tâlhăroi
@@ -9138,10 +9102,6 @@ vătăjesc
 vătăjiță
 vătășesc
 vătășiță
-wahabism
-willemit
-witherit
-wulfenit
 xantocit
 xantofor
 xenofilă
@@ -9163,13 +9123,6 @@ xilocrom
 xilofită
 xilograf
 xografie
-yachtman
-yemenită
-yoghinic
-yoghistă
-ypresian
-yterbină
-ytterbiu
 zaharază
 zaharidă
 zaharisi

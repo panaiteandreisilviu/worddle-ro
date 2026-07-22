@@ -215,7 +215,6 @@ azot
 azur
 ațos
 baba
-baby
 babă
 baci
 bacă
@@ -298,7 +297,6 @@ blum
 boar
 bobi
 boci
-body
 boem
 boia
 boit
@@ -374,7 +372,6 @@ bust
 bute
 buză
 buși
-byte
 bâtă
 bâză
 bâța
@@ -730,7 +727,6 @@ doză
 drac
 drag
 dram
-draw
 dren
 dres
 dric
@@ -773,7 +769,6 @@ dură
 duză
 dușa
 dușă
-dyke
 dzeu
 dzâd
 dzăr
@@ -947,7 +942,6 @@ flog
 flop
 flor
 flou
-flow
 flox
 flux
 foac
@@ -1172,7 +1166,6 @@ hipn
 hipo
 hips
 hlei
-hoby
 hoco
 hoge
 hoit
@@ -1385,7 +1378,6 @@ king
 kino
 kips
 kivi
-kiwi
 koka
 kola
 kore
@@ -1394,12 +1386,10 @@ kuba
 kudu
 kurd
 kvar
-kyat
 labi
 labă
 lacs
 lact
-lady
 ladă
 lago
 laic
@@ -1421,7 +1411,6 @@ lati
 laur
 lavă
 laxi
-lazy
 lașa
 lașă
 lațe
@@ -1567,7 +1556,6 @@ mată
 maur
 maus
 maxi
-maya
 mașa
 meat
 meci
@@ -1875,7 +1863,6 @@ orie
 orna
 orta
 orto
-oryx
 oscă
 oset
 osie
@@ -2096,7 +2083,6 @@ pupa
 pupi
 pupă
 puți
-pyas
 pâlc
 pâlș
 până
@@ -2299,7 +2285,6 @@ sete
 setă
 sevă
 sexo
-sexy
 sfat
 sfen
 sfer
@@ -2309,7 +2294,6 @@ sfor
 sfâr
 shed
 shop
-show
 siaj
 sial
 sica
@@ -2344,7 +2328,6 @@ slim
 slin
 slip
 sloi
-slow
 sluj
 slum
 slut
@@ -2446,7 +2429,6 @@ suri
 sută
 sușă
 svat
-swap
 sânt
 sârb
 sârg
@@ -2567,7 +2549,6 @@ tora
 torr
 tors
 tort
-tory
 toxi
 toxo
 trac
@@ -2807,10 +2788,6 @@ vârî
 vâsc
 vădi
 văra
-watt
-whig
-wild
-witz
 xant
 xeno
 xero
@@ -2819,14 +2796,6 @@ xifo
 xilo
 xilă
 xist
-yală
-yard
-yeti
-yoga
-york
-yoyo
-yuan
-yuko
 zaar
 zadă
 zaif
