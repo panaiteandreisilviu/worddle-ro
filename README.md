@@ -1,12 +1,20 @@
-# Wordle RO (Tauri 2)
+# Wordle RO
 
-Romanian Wordle — static web frontend wrapped with **Tauri 2** for **macOS** and **Android**.
+Romanian Wordle — web UI wrapped with **Tauri 2** for **macOS** and **Android**.
+
+## Features
+
+- 3–12 letter words, difficulty tiers (easy / medium / hard / all)
+- Custom word mode (**Propriu**)
+- Optional Romanian diacritics (ă, â, î, ș, ț) with multi-color tile feedback
+- In-app word list browser
+- Portrait fullscreen on Android
 
 ## Prerequisites
 
 | Tool | Notes |
 |------|--------|
-| Node.js 20+ | `/opt/homebrew/opt/node` or any current Node |
+| Node.js 20+ | e.g. Homebrew `node` |
 | Rust (stable) | `curl https://sh.rustup.rs -sSf \| sh` |
 | Android SDK + NDK | Android Studio; set `ANDROID_HOME` |
 | Java 17 | e.g. `brew install openjdk@17` |
@@ -46,12 +54,18 @@ make build-mac
 make android-build
 ```
 
-macOS app: `src-tauri/target/release/bundle/`  
-Android APK: under `src-tauri/gen/android/app/build/outputs/`
+- macOS app: `src-tauri/target/release/bundle/`
+- Android APK: `src-tauri/gen/android/app/build/outputs/`
 
 ## Project layout
 
-- `index.html`, `css/`, `js/` — UI
-- `public/ro_RO/` — word lists (copied into builds)
+- `index.html`, `css/`, `js/` — game UI
+- `public/ro_RO/` — word lists by length and difficulty
+- `ro_stardict/` — Romanian StarDict dictionary data (from [dexonline-stardict](https://github.com/cosminadrianpopescu/dexonline-stardict))
 - `src-tauri/` — Rust / Tauri backend
-- `src-tauri/gen/android/` — generated after `android-init`
+- `src-tauri/gen/android/` — Android project (after `android-init`)
+
+## Credits
+
+- Word frequency splitting: see `scripts/split_by_frequency.py`
+- StarDict DEX data: [cosminadrianpopescu/dexonline-stardict](https://github.com/cosminadrianpopescu/dexonline-stardict)
