@@ -942,11 +942,6 @@ body {
   margin-bottom: 2px;
 }
 
-.keyboard-diacritics .key {
-  max-width: 52px;
-  font-size: 1rem;
-}
-
 .kb-row {
   display: flex;
   justify-content: center;
