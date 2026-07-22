@@ -60,7 +60,8 @@ make android-build
 ## Project layout
 
 - `index.html`, `css/`, `js/` — game UI
-- `public/ro_RO/` — word lists by length and difficulty
+- `public/ro_RO/` — word lists served by the app (Vite public assets)
+- `ro_RO/` — same word lists at repo root (regular folder, kept in sync for scripts/local use)
 - `ro_stardict/` — Romanian StarDict dictionary data (from [dexonline-stardict](https://github.com/cosminadrianpopescu/dexonline-stardict))
 - `src-tauri/` — Rust / Tauri backend
 - `src-tauri/gen/android/` — Android project (after `android-init`)
