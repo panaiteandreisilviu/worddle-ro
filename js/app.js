@@ -1,4 +1,5 @@
 import { stripDiacritics } from "./diacritics.js";
+import { clearGameSave, readGameSave, writeGameSave } from "./game-save.js";
 import { GuessColoring } from "./guess-coloring.js";
 import { HELP_EXAMPLES } from "./help-examples.js";
 import { KeyboardColoring } from "./keyboard-coloring.js";
@@ -219,6 +220,11 @@ const helpBody = $("#help-body");
 const statsBody = $("#stats-body");
 const wordlistBody = $("#wordlist-body");
 const wordlistStatus = $("#wordlist-status");
+const resumeBlock = $("#resume-block");
+const resumeHint = $("#resume-hint");
+const btnResume = $("#btn-resume");
+const btnNewGame = $("#btn-new-game");
+const btnStart = $("#btn-start");
 
 const THEME_KEY = "wordle-ro-theme";
 const THEME_LABELS = {
@@ -651,9 +657,9 @@ function buildKeyboard() {
 }
 
 function currentGuess() {
-  return state.grid[state.row]
-    .map((t) => t.dataset.letter || "")
-    .join("");
+  const row = state.grid?.[state.row];
+  if (!row) return "";
+  return row.map((t) => t.dataset.letter || "").join("");
 }
 
 function setTileLetter(row, col, letter) {
@@ -737,6 +743,8 @@ async function submitGuess() {
   void statsService.recordValidGuess({
     difficulty: state.difficulty,
     letterCount: state.letterCount,
+    word: guess,
+    results,
   });
 
   await revealRow(state.row, results);
@@ -747,6 +755,7 @@ async function submitGuess() {
 
   if (guess === state.answer) {
     state.done = true;
+    clearGameSave();
     statusEl.textContent = `Bravo! ${state.row + 1}/${MAX_GUESSES}`;
     void recordFinishedStats(true);
     showEndScreen(true);
@@ -758,10 +767,14 @@ async function submitGuess() {
 
   if (state.row >= MAX_GUESSES) {
     state.done = true;
+    clearGameSave();
     statusEl.textContent = `Răspuns: ${state.answer.toUpperCase()}`;
     void recordFinishedStats(false);
     showEndScreen(false);
+    return;
   }
+
+  saveProgress();
 }
 
 function recordFinishedStats(won) {
@@ -786,6 +799,261 @@ function maybeRecordAbandon() {
     playTimeMs: Math.max(0, Date.now() - (state.roundStartedAt || Date.now())),
   });
   state.done = true;
+}
+
+function hasActiveProgress() {
+  return Boolean(state.answer && !state.done);
+}
+
+function buildSavePayload() {
+  if (!hasActiveProgress()) return null;
+  return {
+    version: 1,
+    language: state.language || "ro",
+    letterCount: state.letterCount,
+    difficulty: state.difficulty,
+    diaMode: currentDiaMode(),
+    answer: state.answer,
+    forcedAnswer: state.forcedAnswer,
+    row: state.row,
+    col: state.col,
+    guesses: state.guesses.map((g) => ({
+      word: g.word,
+      results: g.results,
+    })),
+    partial: currentGuess(),
+    roundStartedAt: state.roundStartedAt || Date.now(),
+    savedAt: Date.now(),
+  };
+}
+
+function saveProgress() {
+  const payload = buildSavePayload();
+  if (!payload) return;
+  writeGameSave(payload);
+}
+
+function syncResumeUi() {
+  const saved = readGameSave();
+  if (!saved) {
+    resumeBlock?.classList.add("hidden");
+    btnStart?.classList.remove("hidden");
+    return;
+  }
+  const diffLabel = DIFFICULTY_LABELS[saved.difficulty] || saved.difficulty;
+  const tries = saved.guesses?.length ?? 0;
+  if (resumeHint) {
+    resumeHint.textContent = `${saved.letterCount} litere · ${diffLabel} · ${tries}/${MAX_GUESSES} încercări`;
+  }
+  resumeBlock?.classList.remove("hidden");
+  btnStart?.classList.add("hidden");
+}
+
+function abandonSavedGame(saved) {
+  if (!saved?.answer) return;
+  const guessesMade = saved.guesses?.length ?? 0;
+  if (!guessesMade && !saved.partial) return;
+  void statsService.recordAbandon({
+    difficulty: saved.difficulty,
+    letterCount: saved.letterCount,
+    guessesMade,
+    playTimeMs: Math.max(0, Date.now() - (saved.roundStartedAt || Date.now())),
+  });
+}
+
+function discardSavedGame() {
+  if (hasActiveProgress()) {
+    maybeRecordAbandon();
+  } else {
+    const saved = readGameSave();
+    if (saved) abandonSavedGame(saved);
+  }
+  clearGameSave();
+  state.answer = "";
+  state.guesses = [];
+  state.row = 0;
+  state.col = 0;
+  state.done = false;
+  syncResumeUi();
+}
+
+function savedGameHasProgress(saved) {
+  if (!saved) return false;
+  return (saved.guesses?.length ?? 0) > 0 || Boolean(saved.partial);
+}
+
+function promptConfirm({ title, detail, confirmLabel }) {
+  return new Promise((resolve) => {
+    const overlay = $("#confirm-overlay");
+    const titleEl = $("#confirm-title");
+    const detailEl = $("#confirm-detail");
+    const okBtn = $("#confirm-ok");
+    const cancelBtn = $("#confirm-cancel");
+    if (!overlay || !okBtn || !cancelBtn) {
+      resolve(false);
+      return;
+    }
+    if (titleEl) titleEl.textContent = title;
+    if (detailEl) detailEl.textContent = detail;
+    okBtn.textContent = confirmLabel || "Confirmă";
+    overlay.classList.remove("hidden");
+
+    const finish = (value) => {
+      overlay.classList.add("hidden");
+      okBtn.removeEventListener("click", onOk);
+      cancelBtn.removeEventListener("click", onCancel);
+      overlay.removeEventListener("click", onBackdrop);
+      document.removeEventListener("keydown", onKey);
+      resolve(value);
+    };
+    const onOk = () => finish(true);
+    const onCancel = () => finish(false);
+    const onBackdrop = (e) => {
+      if (e.target === overlay) finish(false);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        finish(false);
+      }
+    };
+    okBtn.addEventListener("click", onOk);
+    cancelBtn.addEventListener("click", onCancel);
+    overlay.addEventListener("click", onBackdrop);
+    document.addEventListener("keydown", onKey);
+  });
+}
+
+async function startNewGameFromSetup() {
+  const saved = readGameSave();
+  const inProgress = hasActiveProgress();
+  if (saved || inProgress) {
+    const hasProgress =
+      (inProgress &&
+        (state.guesses.length > 0 || Boolean(currentGuess()))) ||
+      savedGameHasProgress(saved);
+    if (hasProgress) {
+      const ok = await promptConfirm({
+        title: "Joc nou",
+        detail: "Abandonezi partida curentă și începi una nouă?",
+        confirmLabel: "Da, joc nou",
+      });
+      if (!ok) return;
+    }
+    discardSavedGame();
+  }
+  await startGame();
+}
+
+function paintRestoredBoard() {
+  buildBoard();
+  buildKeyboard();
+  state.keyboard.reset();
+
+  for (let r = 0; r < state.guesses.length; r++) {
+    const { word, results } = state.guesses[r];
+    for (let c = 0; c < word.length; c++) {
+      setTileLetter(r, c, word[c]);
+      applyTileStatuses(state.grid[r][c], results[c]);
+    }
+    state.keyboard.applyGuessResults(word, results);
+  }
+
+  const partial = state._partial || "";
+  delete state._partial;
+  for (let c = 0; c < partial.length; c++) {
+    setTileLetter(state.row, c, partial[c]);
+  }
+  state.col = partial.length;
+  refreshKeyboardColors();
+}
+
+async function restoreFromSave(saved) {
+  setDiaMode(saved.diaMode || "on");
+  setLetterCount(saved.letterCount);
+  setDifficulty(saved.difficulty);
+  if (saved.difficulty === "custom") {
+    state.forcedAnswer = saved.forcedAnswer || saved.answer;
+  } else {
+    state.forcedAnswer = null;
+  }
+
+  state.language = saved.language || "ro";
+  state.letterCount = saved.letterCount;
+  state.difficulty = saved.difficulty;
+  state.useDiacritics = effectiveUseDiacritics();
+  state.answer = saved.answer;
+  state.row = saved.row || 0;
+  state.col = 0;
+  state.guesses = (saved.guesses || []).map((g) => ({
+    word: g.word,
+    results: g.results,
+  }));
+  state._partial = saved.partial || "";
+  state.done = false;
+  state.revealing = false;
+  state.roundStartedAt = saved.roundStartedAt || Date.now();
+  revealClicks = 0;
+
+  statusEl.textContent = "Se încarcă…";
+  setupEl.classList.add("hidden");
+  gameEl.classList.remove("hidden");
+  hideEndScreen();
+  hideExplain();
+  gameEl.classList.remove("game-over");
+
+  try {
+    const loaded = await loadWords(
+      state.letterCount,
+      state.useDiacritics,
+      state.difficulty
+    );
+    state.words = loaded.words;
+    state.solutions = loaded.solutions;
+
+    if (
+      state.difficulty !== "custom" &&
+      !state.solutions.includes(state.answer) &&
+      !state.words.includes(state.answer)
+    ) {
+      throw new Error("Partida salvată nu mai este validă.");
+    }
+
+    const diffLabel = DIFFICULTY_LABELS[state.difficulty] || state.difficulty;
+    const diaLabel = state.useDiacritics
+      ? "cu diacritice"
+      : diacriticsInput.checked
+        ? "fără forțare"
+        : "fără diacritice";
+    statusEl.textContent = `${state.letterCount} litere · ${diffLabel} · ${diaLabel}`;
+    modeLabel.textContent = diffLabel;
+    paintRestoredBoard();
+    saveProgress();
+  } catch (err) {
+    clearGameSave();
+    syncResumeUi();
+    showToast(err.message || "Nu am putut continua partida", 2500);
+    gameEl.classList.add("hidden");
+    setupEl.classList.remove("hidden");
+  }
+}
+
+async function resumeGame() {
+  if (hasActiveProgress() && state.grid?.length) {
+    setupEl.classList.add("hidden");
+    helpEl.classList.add("hidden");
+    statsEl.classList.add("hidden");
+    wordlistEl.classList.add("hidden");
+    gameEl.classList.remove("hidden");
+    saveProgress();
+    return;
+  }
+  const saved = readGameSave();
+  if (!saved) {
+    syncResumeUi();
+    return;
+  }
+  await restoreFromSave(saved);
 }
 
 function showEndScreen(won) {
@@ -927,6 +1195,7 @@ function resetRound() {
   modeLabel.textContent = diffLabel;
   buildBoard();
   buildKeyboard();
+  saveProgress();
 }
 
 async function startGame() {
@@ -969,7 +1238,11 @@ async function startGame() {
 }
 
 function backToSetup() {
-  maybeRecordAbandon();
+  if (hasActiveProgress()) {
+    saveProgress();
+  } else {
+    clearGameSave();
+  }
   hideEndScreen();
   hideExplain();
   helpEl.classList.add("hidden");
@@ -977,6 +1250,7 @@ function backToSetup() {
   wordlistEl.classList.add("hidden");
   gameEl.classList.add("hidden");
   setupEl.classList.remove("hidden");
+  syncResumeUi();
 }
 
 function showStats() {
@@ -1000,6 +1274,7 @@ function showStats() {
 function hideStats() {
   statsEl.classList.add("hidden");
   setupEl.classList.remove("hidden");
+  syncResumeUi();
 }
 
 function showHelp() {
@@ -1014,6 +1289,7 @@ function showHelp() {
 function hideHelp() {
   helpEl.classList.add("hidden");
   setupEl.classList.remove("hidden");
+  syncResumeUi();
 }
 
 function showWordList() {
@@ -1034,6 +1310,7 @@ function showWordList() {
 function hideWordList() {
   wordlistEl.classList.add("hidden");
   setupEl.classList.remove("hidden");
+  syncResumeUi();
 }
 
 async function refreshWordList() {
@@ -1182,6 +1459,20 @@ $("#setup-form").addEventListener("submit", (e) => {
   startGame();
 });
 
+btnResume?.addEventListener("click", () => {
+  void resumeGame();
+});
+btnNewGame?.addEventListener("click", () => {
+  void startNewGameFromSetup();
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") saveProgress();
+});
+window.addEventListener("pagehide", () => {
+  saveProgress();
+});
+
 $("#btn-back").addEventListener("click", backToSetup);
 $("#btn-explain").addEventListener("click", showExplain);
 explainClose.addEventListener("click", hideExplain);
@@ -1232,6 +1523,10 @@ document.addEventListener("keydown", (e) => {
     }
     return;
   }
+  const confirmOverlay = $("#confirm-overlay");
+  if (confirmOverlay && !confirmOverlay.classList.contains("hidden")) {
+    return;
+  }
   if (!explainOverlay.classList.contains("hidden")) {
     if (e.key === "Escape") {
       e.preventDefault();
@@ -1270,6 +1565,7 @@ initTheme();
 initSliders();
 initDiffPicker();
 refreshDifficultyCounts();
+syncResumeUi();
 void statsService.init().catch((err) => {
   console.warn("Stats DB init failed", err);
 });

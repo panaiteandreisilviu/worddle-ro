@@ -1,4 +1,5 @@
 import { EMPTY_STATS } from "./schema.js";
+import { KeyboardColoring } from "../keyboard-coloring.js";
 
 /**
  * @param {{ difficulty?: string|null, letterCount?: number|null }} filter
@@ -39,6 +40,48 @@ function streakFromResults(resultsChronological) {
 }
 
 /**
+ * Unique-letter hits for one guess, using keyboard coloring
+ * (tile status + badges; duplicate letters count once).
+ * @param {string} word
+ * @param {{ status: string, badges?: { status: string }[] }[]} results
+ */
+export function scoreGuessLetters(word, results) {
+  const kb = new KeyboardColoring();
+  kb.applyGuessResults(word, results || []);
+  const statuses = kb.getAll();
+  let green = 0;
+  let yellow = 0;
+  let purple = 0;
+  let absent = 0;
+  for (const status of Object.values(statuses)) {
+    if (status === "correct") green += 1;
+    else if (status === "present") yellow += 1;
+    else if (status === "diacritic") purple += 1;
+    else if (status === "absent") absent += 1;
+  }
+  const total = green + yellow + purple + absent;
+  return { green, yellow, purple, absent, total, statuses };
+}
+
+function parseGuessResults(row) {
+  if (Array.isArray(row.results)) return row.results;
+  if (typeof row.results_json === "string") {
+    try {
+      const parsed = JSON.parse(row.results_json);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+  return [];
+}
+
+function pct(part, total) {
+  if (!total) return 0;
+  return Math.round((part / total) * 1000) / 10;
+}
+
+/**
  * Pure aggregation over raw row arrays (SQLite-shaped).
  * @param {{
  *   games: object[],
@@ -60,6 +103,7 @@ export function aggregateStats(data, filter = {}) {
     ...EMPTY_STATS,
     winsByTries: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 },
     guessedWords: [],
+    triedWords: [],
   };
 
   stats.gamesPlayed = games.length;
@@ -72,6 +116,10 @@ export function aggregateStats(data, filter = {}) {
   const lostSet = new Set();
   const days = new Set();
   const chrono = [];
+  /** @type {Map<string, { tries: number, green: number, yellow: number, purple: number, total: number }>} */
+  const triedMap = new Map();
+  /** @type {Map<string, { tries: number, green: number, yellow: number, purple: number, total: number }>} */
+  const letterMap = new Map();
 
   let sumGuessesOnWins = 0;
   let sumWinTime = 0;
@@ -137,6 +185,36 @@ export function aggregateStats(data, filter = {}) {
     badges += Number(g.badge_total) || 0;
   }
 
+  for (const guess of validGuesses) {
+    const word = String(guess.word || "").toLowerCase();
+    if (!word) continue;
+    const results = parseGuessResults(guess);
+    const scored = scoreGuessLetters(word, results);
+    let entry = triedMap.get(word);
+    if (!entry) {
+      entry = { tries: 0, green: 0, yellow: 0, purple: 0, total: 0 };
+      triedMap.set(word, entry);
+    }
+    entry.tries += 1;
+    entry.green += scored.green;
+    entry.yellow += scored.yellow;
+    entry.purple += scored.purple;
+    entry.total += scored.total;
+
+    for (const [letter, status] of Object.entries(scored.statuses)) {
+      let letterEntry = letterMap.get(letter);
+      if (!letterEntry) {
+        letterEntry = { tries: 0, green: 0, yellow: 0, purple: 0, total: 0 };
+        letterMap.set(letter, letterEntry);
+      }
+      letterEntry.tries += 1;
+      letterEntry.total += 1;
+      if (status === "correct") letterEntry.green += 1;
+      else if (status === "present") letterEntry.yellow += 1;
+      else if (status === "diacritic") letterEntry.purple += 1;
+    }
+  }
+
   for (const a of abandons) {
     abandonPlayTime += Number(a.play_time_ms) || 0;
     longest = Math.max(longest, Number(a.play_time_ms) || 0);
@@ -178,6 +256,24 @@ export function aggregateStats(data, filter = {}) {
   stats.gamesWithViolet = withViolet;
   stats.badgeTotal = badges;
   stats.guessedWords.sort((a, b) => b.finishedAt - a.finishedAt);
+  stats.triedWords = [...triedMap.entries()]
+    .map(([word, e]) => ({
+      word,
+      tries: e.tries,
+      greenPct: pct(e.green, e.total),
+      yellowPct: pct(e.yellow, e.total),
+      purplePct: pct(e.purple, e.total),
+    }))
+    .sort((a, b) => b.tries - a.tries || a.word.localeCompare(b.word, "ro"));
+  stats.triedLetters = [...letterMap.entries()]
+    .map(([letter, e]) => ({
+      letter,
+      tries: e.tries,
+      greenPct: pct(e.green, e.total),
+      yellowPct: pct(e.yellow, e.total),
+      purplePct: pct(e.purple, e.total),
+    }))
+    .sort((a, b) => b.tries - a.tries || a.letter.localeCompare(b.letter, "ro"));
 
   return stats;
 }

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   aggregateStats,
   localDayKey,
+  scoreGuessLetters,
   summarizeBoard,
 } from "../js/stats/aggregate.js";
 
@@ -27,6 +28,25 @@ describe("summarizeBoard", () => {
       first_row_greens: 1,
       badge_total: 2,
       had_violet: 1,
+    });
+  });
+});
+
+describe("scoreGuessLetters", () => {
+  it("counts unique letters via keyboard coloring, including badge upgrades", () => {
+    const scored = scoreGuessLetters("aba", [
+      { status: "absent", badges: [{ status: "present", count: 1 }] },
+      { status: "correct", badges: [] },
+      { status: "present", badges: [] },
+    ]);
+    // a upgraded to present (once), b correct
+    expect(scored).toEqual({
+      green: 1,
+      yellow: 1,
+      purple: 0,
+      absent: 0,
+      total: 2,
+      statuses: { a: "present", b: "correct" },
     });
   });
 });
@@ -96,6 +116,73 @@ describe("aggregateStats", () => {
       { answer: "trei", finishedAt: 300, guessCount: 4, won: true },
       { answer: "doi", finishedAt: 200, guessCount: 6, won: false },
       { answer: "unu", finishedAt: 100, guessCount: 2, won: true },
+    ]);
+  });
+
+  it("aggregates tried words by tries desc with color percentages", () => {
+    const tile = (status, badges = []) => ({ status, badges });
+    const stats = aggregateStats({
+      games: [],
+      invalids: [],
+      abandons: [],
+      validGuesses: [
+        {
+          difficulty: "easy",
+          letter_count: 3,
+          word: "abc",
+          results: [
+            tile("correct"),
+            tile("present"),
+            tile("absent"),
+          ],
+        },
+        {
+          difficulty: "easy",
+          letter_count: 3,
+          word: "abc",
+          results: [
+            tile("correct"),
+            tile("diacritic"),
+            tile("absent"),
+          ],
+        },
+        {
+          difficulty: "easy",
+          letter_count: 3,
+          word: "xyz",
+          results: [
+            tile("present"),
+            tile("absent"),
+            tile("absent"),
+          ],
+        },
+      ],
+    });
+    expect(stats.triedWords).toEqual([
+      {
+        word: "abc",
+        tries: 2,
+        // try1: g1 y1 a1; try2: g1 p1 a1 → g2 y1 p1 a2 / total 6
+        greenPct: 33.3,
+        yellowPct: 16.7,
+        purplePct: 16.7,
+      },
+      {
+        word: "xyz",
+        tries: 1,
+        // y1 a2 / total 3
+        greenPct: 0,
+        yellowPct: 33.3,
+        purplePct: 0,
+      },
+    ]);
+    expect(stats.triedLetters).toEqual([
+      { letter: "a", tries: 2, greenPct: 100, yellowPct: 0, purplePct: 0 },
+      { letter: "b", tries: 2, greenPct: 0, yellowPct: 50, purplePct: 50 },
+      { letter: "c", tries: 2, greenPct: 0, yellowPct: 0, purplePct: 0 },
+      { letter: "x", tries: 1, greenPct: 0, yellowPct: 100, purplePct: 0 },
+      { letter: "y", tries: 1, greenPct: 0, yellowPct: 0, purplePct: 0 },
+      { letter: "z", tries: 1, greenPct: 0, yellowPct: 0, purplePct: 0 },
     ]);
   });
 

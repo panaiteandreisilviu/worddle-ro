@@ -240,6 +240,64 @@ export function createStatsView({ bodyEl, getStats, resetStats, initial = {} }) 
     panel.appendChild(list);
   }
 
+  function formatPct(n) {
+    return `${Number(n).toFixed(1)}%`;
+  }
+
+  function renderTriedWords(panel, stats) {
+    const words = stats.triedWords || [];
+    if (!words.length) {
+      panel.innerHTML = `<p class="stats-empty">Nicio încercare înregistrată încă</p>`;
+      return;
+    }
+    const list = document.createElement("ul");
+    list.className = "stats-tried-list";
+    for (const row of words) {
+      const li = document.createElement("li");
+      li.className = "stats-tried-row";
+      const triesLabel = row.tries === 1 ? "1×" : `${row.tries}×`;
+      li.innerHTML = `
+        <span class="stats-tried-word">${escapeHtml(String(row.word || "").toUpperCase())}</span>
+        <span class="stats-tried-count">${escapeHtml(triesLabel)}</span>
+        <span class="stats-tried-pcts">
+          <span class="stats-tried-pct is-green">${escapeHtml(formatPct(row.greenPct))}</span>
+          <span class="stats-tried-pct is-yellow">${escapeHtml(formatPct(row.yellowPct))}</span>
+          <span class="stats-tried-pct is-purple">${escapeHtml(formatPct(row.purplePct))}</span>
+        </span>
+      `;
+      list.appendChild(li);
+    }
+    panel.innerHTML = "";
+    panel.appendChild(list);
+  }
+
+  function renderTriedLetters(panel, stats) {
+    const letters = stats.triedLetters || [];
+    if (!letters.length) {
+      panel.innerHTML = `<p class="stats-empty">Nicio literă înregistrată încă</p>`;
+      return;
+    }
+    const list = document.createElement("ul");
+    list.className = "stats-tried-list";
+    for (const row of letters) {
+      const li = document.createElement("li");
+      li.className = "stats-tried-row";
+      const triesLabel = row.tries === 1 ? "1×" : `${row.tries}×`;
+      li.innerHTML = `
+        <span class="stats-tried-word">${escapeHtml(String(row.letter || "").toUpperCase())}</span>
+        <span class="stats-tried-count">${escapeHtml(triesLabel)}</span>
+        <span class="stats-tried-pcts">
+          <span class="stats-tried-pct is-green">${escapeHtml(formatPct(row.greenPct))}</span>
+          <span class="stats-tried-pct is-yellow">${escapeHtml(formatPct(row.yellowPct))}</span>
+          <span class="stats-tried-pct is-purple">${escapeHtml(formatPct(row.purplePct))}</span>
+        </span>
+      `;
+      list.appendChild(li);
+    }
+    panel.innerHTML = "";
+    panel.appendChild(list);
+  }
+
   function renderPanel(stats) {
     const panel = bodyEl.querySelector("[data-stats-panel]");
     if (!panel) return;
@@ -250,6 +308,14 @@ export function createStatsView({ bodyEl, getStats, resetStats, initial = {} }) 
     const cat = STAT_CATEGORIES.find((c) => c.id === tab) || STAT_CATEGORIES[0];
     if (cat.kind === "guessedWords") {
       renderGuessedWords(panel, stats);
+      return;
+    }
+    if (cat.kind === "triedWords") {
+      renderTriedWords(panel, stats);
+      return;
+    }
+    if (cat.kind === "triedLetters") {
+      renderTriedLetters(panel, stats);
       return;
     }
     const list = document.createElement("dl");

@@ -128,7 +128,12 @@
             <input type="checkbox" id="diacritics-soft" name="diacriticsSoft" class="sr-only" tabindex="-1" />
           </div>
           <div class="setup-actions">
-            <button type="submit" class="btn-primary">Începe jocul</button>
+            <div id="resume-block" class="resume-block hidden">
+              <button type="button" id="btn-resume" class="btn-primary">Continuă jocul</button>
+              <p class="resume-hint" id="resume-hint"></p>
+              <button type="button" id="btn-new-game" class="btn-secondary">Joc nou</button>
+            </div>
+            <button type="submit" id="btn-start" class="btn-primary">Începe jocul</button>
             <div class="setup-actions-row">
               <button type="button" id="btn-stats" class="btn-secondary btn-compact">Statistici</button>
               <button type="button" id="btn-wordlist" class="btn-secondary btn-compact">Cuvinte</button>
@@ -333,6 +338,23 @@
         <h2 id="explain-title" class="modal-title">Explică culorile</h2>
         <div id="explain-body" class="explain-body"></div>
         <button type="button" id="explain-close" class="btn-primary">Închide</button>
+      </div>
+    </div>
+
+    <div
+      id="confirm-overlay"
+      class="modal-overlay hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirm-title"
+    >
+      <div class="modal-card">
+        <h2 id="confirm-title" class="modal-title">Joc nou</h2>
+        <p id="confirm-detail" class="modal-detail">
+          Abandonezi partida curentă și începi una nouă?
+        </p>
+        <button type="button" id="confirm-ok" class="btn-primary">Da, joc nou</button>
+        <button type="button" id="confirm-cancel" class="btn-secondary">Anulează</button>
       </div>
     </div>
 

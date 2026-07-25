@@ -23,12 +23,19 @@ export class StatsService {
     return difficulty && difficulty !== "custom";
   }
 
-  async recordValidGuess({ difficulty, letterCount }) {
+  async recordValidGuess({ difficulty, letterCount, word, results }) {
     if (!this.shouldTrack(difficulty)) return;
     await this.init();
     await this.db.execute(
-      `INSERT INTO valid_guesses (difficulty, letter_count, at) VALUES (?, ?, ?)`,
-      [difficulty, letterCount, Date.now()]
+      `INSERT INTO valid_guesses (difficulty, letter_count, word, results_json, at)
+       VALUES (?, ?, ?, ?, ?)`,
+      [
+        difficulty,
+        letterCount,
+        String(word || "").toLowerCase(),
+        JSON.stringify(results || []),
+        Date.now(),
+      ]
     );
   }
 
@@ -109,7 +116,9 @@ export class StatsService {
       this.db.select(
         `SELECT difficulty, letter_count, guesses_made, play_time_ms, at FROM abandons`
       ),
-      this.db.select(`SELECT difficulty, letter_count, at FROM valid_guesses`),
+      this.db.select(
+        `SELECT difficulty, letter_count, word, results_json, at FROM valid_guesses`
+      ),
     ]);
 
     return aggregateStats(
@@ -134,6 +143,8 @@ export class StatsService {
       ...EMPTY_STATS,
       winsByTries: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 },
       guessedWords: [],
+      triedWords: [],
+      triedLetters: [],
     };
   }
 }

@@ -1,6 +1,6 @@
 /** SQLite schema for stats. Dropped/recreated freely — no migrations. */
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export const SCHEMA_SQL = `
 PRAGMA foreign_keys = ON;
@@ -49,6 +49,8 @@ CREATE TABLE IF NOT EXISTS valid_guesses (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   difficulty TEXT NOT NULL,
   letter_count INTEGER NOT NULL,
+  word TEXT NOT NULL,
+  results_json TEXT NOT NULL,
   at INTEGER NOT NULL
 );
 
@@ -100,6 +102,8 @@ export const EMPTY_STATS = Object.freeze({
   gamesWithViolet: 0,
   badgeTotal: 0,
   guessedWords: Object.freeze([]),
+  triedWords: Object.freeze([]),
+  triedLetters: Object.freeze([]),
 });
 
 export const STAT_CATEGORIES = [
@@ -116,11 +120,6 @@ export const STAT_CATEGORIES = [
       "daysPlayed",
       "totalPlayTimeMs",
     ],
-  },
-  {
-    id: "guessed",
-    label: "Cuvinte",
-    kind: "guessedWords",
   },
   {
     id: "distribution",
@@ -183,6 +182,21 @@ export const STAT_CATEGORIES = [
       "gamesWithViolet",
       "badgeTotal",
     ],
+  },
+  {
+    id: "guessed",
+    label: "Cuvinte",
+    kind: "guessedWords",
+  },
+  {
+    id: "tried",
+    label: "Încercări",
+    kind: "triedWords",
+  },
+  {
+    id: "letters",
+    label: "Litere",
+    kind: "triedLetters",
   },
 ];
 
