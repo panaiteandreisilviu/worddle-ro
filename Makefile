@@ -36,7 +36,7 @@ RUN = env \
 	ANDROID_NDK_HOME="$(ANDROID_NDK_HOME)" \
 	JAVA_HOME="$(JAVA_HOME)"
 
-.PHONY: help web mac desktop dev build-mac build android-init android android-dev android-build android-build-dev android-build-prod icon
+.PHONY: help web mac desktop dev build-mac build android-init android android-dev android-build android-build-dev android-build-prod icon test
 
 help:
 	@echo "Wordle RO targets:"
@@ -48,14 +48,16 @@ help:
 	@echo "  make android-build-dev   Debug APK (no server)"
 	@echo "  make android-build-prod  Release APK (no server)"
 	@echo "  make icon                Regenerate icons from app-icon.png"
+	@echo "  make test                Unit tests (vitest)"
 	@echo ""
 	@echo "Requires: Node, Rust, Android SDK/NDK (for Android), Java 17"
 	@echo "npm: $(NPM)"
 
 web:
-	@echo "Wordle RO (web) → $(URL)"
-	@(sleep 0.4 && open "$(URL)") &
-	python3 -m http.server $(PORT)
+	@echo "Wordle RO (web) → vite preview $(URL)"
+	$(RUN) $(NPM) run build
+	@(sleep 0.6 && open "$(URL)") &
+	$(RUN) $(NPM) run preview -- --host 127.0.0.1 --port $(PORT)
 
 mac desktop dev:
 	@echo "Wordle RO (macOS) → tauri dev"
@@ -101,3 +103,6 @@ icon:
 	$(RUN) $(NPM) run tauri -- icon app-icon.png
 	cp app-icon.png public/icon.png
 	cp src-tauri/icons/128x128.png public/favicon.png
+
+test:
+	$(RUN) $(NPM) test

@@ -7,16 +7,23 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
     "tauri:build": "tauri build",
     "android:init": "tauri android init",
     "android:dev": "tauri android dev",
     "android:build": "tauri android build",
-    "web": "python3 -m http.server 8765"
+    "web": "vite preview --host 127.0.0.1 --port 8765"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^2",
-    "vite": "^6"
+    "vite": "^6",
+    "vitest": "^3"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-sql": "^2.4.0",
+    "sql.js": "^1.14.1"
   }
 }

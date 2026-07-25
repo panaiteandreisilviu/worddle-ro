@@ -29,4 +29,7 @@ export default defineConfig({
     assetsInlineLimit: 0,
   },
   envPrefix: ["VITE_", "TAURI_"],
+  test: {
+    include: ["tests/**/*.test.js"],
+  },
 });

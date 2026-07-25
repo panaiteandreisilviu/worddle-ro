@@ -6,7 +6,8 @@ Romanian Wordle — web UI wrapped with **Tauri 2** for **macOS** and **Android*
 
 - 3–12 letter words, difficulty tiers (easy / medium / hard / all)
 - Custom word mode (**Propriu**)
-- Optional Romanian diacritics (ă, â, î, ș, ț) with multi-color tile feedback
+- Optional Romanian diacritics (ă, â, î, ș, ț) with position badges for elsewhere hints
+- Statistics (SQLite) with filters by difficulty and letter count
 - In-app word list browser
 - Portrait fullscreen on Android
 
@@ -45,6 +46,10 @@ make mac
 
 # Android emulator or USB device
 make android
+
+# Unit tests
+make test
+# npm test
 ```
 
 ## Build
@@ -60,6 +65,8 @@ make android-build
 ## Project layout
 
 - `index.html`, `css/`, `js/` — game UI
+- `js/guess-coloring.js`, `js/keyboard-coloring.js` — board / keyboard coloring logic
+- `tests/` — unit tests (vitest)
 - `public/ro_RO/` — word lists served by the app (Vite public assets)
 - `ro_RO/` — same word lists at repo root (regular folder, kept in sync for scripts/local use)
 - `ro_stardict/` — Romanian StarDict dictionary data (from [dexonline-stardict](https://github.com/cosminadrianpopescu/dexonline-stardict))
