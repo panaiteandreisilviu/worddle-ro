@@ -65,7 +65,7 @@ function formatDateTime(ts) {
     return new Date(ts).toLocaleString("ro-RO", {
       day: "2-digit",
       month: "2-digit",
-      year: "numeric",
+      year: "2-digit",
       hour: "2-digit",
       minute: "2-digit",
     });
@@ -75,9 +75,11 @@ function formatDateTime(ts) {
 }
 
 function formatTries(n) {
-  if (n === 1) return "1 încercare";
-  return `${n} încercări`;
+  return `${n}/6`;
 }
+
+const RESULT_ICON_WIN = `<svg class="stats-guessed-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const RESULT_ICON_LOSS = `<svg class="stats-guessed-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>`;
 
 /**
  * @param {{
@@ -215,20 +217,22 @@ export function createStatsView({ bodyEl, getStats, resetStats, initial = {} }) 
   function renderGuessedWords(panel, stats) {
     const words = stats.guessedWords || [];
     if (!words.length) {
-      panel.innerHTML = `<p class="stats-empty">Niciun cuvânt ghicit încă</p>`;
+      panel.innerHTML = `<p class="stats-empty">Niciun joc înregistrat încă</p>`;
       return;
     }
     const list = document.createElement("ul");
     list.className = "stats-guessed-list";
     for (const row of words) {
       const li = document.createElement("li");
-      li.className = "stats-guessed-row";
+      const won = !!row.won;
+      li.className = `stats-guessed-row ${won ? "is-win" : "is-loss"}`;
       li.innerHTML = `
-        <span class="stats-guessed-word">${escapeHtml(String(row.answer || "").toUpperCase())}</span>
-        <span class="stats-guessed-meta">
-          <span class="stats-guessed-date">${escapeHtml(formatDateTime(row.finishedAt))}</span>
-          <span class="stats-guessed-tries">${escapeHtml(formatTries(row.guessCount))}</span>
+        <span class="stats-guessed-result" title="${won ? "Reușit" : "Eșuat"}" aria-label="${won ? "Reușit" : "Eșuat"}">
+          ${won ? RESULT_ICON_WIN : RESULT_ICON_LOSS}
         </span>
+        <span class="stats-guessed-word">${escapeHtml(String(row.answer || "").toUpperCase())}</span>
+        <span class="stats-guessed-date">${escapeHtml(formatDateTime(row.finishedAt))}</span>
+        <span class="stats-guessed-tries">${escapeHtml(formatTries(row.guessCount))}</span>
       `;
       list.appendChild(li);
     }

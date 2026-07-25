@@ -106,16 +106,18 @@ export function aggregateStats(data, filter = {}) {
       if (fastest == null || playTime < fastest) fastest = playTime;
       if (slowest == null || playTime > slowest) slowest = playTime;
       wonSet.add(g.answer);
-      stats.guessedWords.push({
-        answer: String(g.answer || ""),
-        finishedAt: finishedAt || 0,
-        guessCount,
-      });
     } else {
       stats.losses += 1;
       totalLossTime += playTime;
       lostSet.add(g.answer);
     }
+
+    stats.guessedWords.push({
+      answer: String(g.answer || ""),
+      finishedAt: finishedAt || 0,
+      guessCount,
+      won,
+    });
 
     played.add(g.answer);
     if (g.day) days.add(g.day);

@@ -77,11 +77,11 @@ describe("aggregateStats", () => {
     expect(stats.gamesWithViolet).toBe(1);
     expect(stats.avgFirstRowGreens).toBe(2);
     expect(stats.guessedWords).toEqual([
-      { answer: "carte", finishedAt: 1_000_000, guessCount: 3 },
+      { answer: "carte", finishedAt: 1_000_000, guessCount: 3, won: true },
     ]);
   });
 
-  it("lists guessed words newest first and skips losses", () => {
+  it("lists all games newest first with win/loss", () => {
     const stats = aggregateStats({
       games: [
         { ...baseGame, won: 1, finished_at: 100, answer: "unu", guess_count: 2 },
@@ -93,8 +93,9 @@ describe("aggregateStats", () => {
       validGuesses: [],
     });
     expect(stats.guessedWords).toEqual([
-      { answer: "trei", finishedAt: 300, guessCount: 4 },
-      { answer: "unu", finishedAt: 100, guessCount: 2 },
+      { answer: "trei", finishedAt: 300, guessCount: 4, won: true },
+      { answer: "doi", finishedAt: 200, guessCount: 6, won: false },
+      { answer: "unu", finishedAt: 100, guessCount: 2, won: true },
     ]);
   });
 
