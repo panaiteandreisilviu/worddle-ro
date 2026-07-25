@@ -87,14 +87,20 @@ describe("aggregateStats", () => {
     expect(stats.winsByTries[3]).toBe(1);
     expect(stats.sumGuessesOnWins).toBe(3);
     expect(stats.avgGuessesOnWins).toBe(3);
+    expect(stats.avgGuessesAll).toBe(3);
     expect(stats.winRate).toBe(1);
+    expect(stats.winRateIn3).toBe(1);
+    expect(stats.winRateIn4).toBe(1);
     expect(stats.validGuesses).toBe(3);
     expect(stats.uniqueAnswersPlayed).toBe(1);
     expect(stats.uniqueAnswersWon).toBe(1);
+    expect(stats.replays).toBe(0);
     expect(stats.currentWinStreak).toBe(1);
     expect(stats.maxWinStreak).toBe(1);
     expect(stats.fastestWinMs).toBe(10000);
+    expect(stats.avgPlayTimeMs).toBe(10000);
     expect(stats.gamesWithViolet).toBe(1);
+    expect(stats.violetGameRate).toBe(1);
     expect(stats.avgFirstRowGreens).toBe(2);
     expect(stats.guessedWords).toEqual([
       { answer: "carte", finishedAt: 1_000_000, guessCount: 3, won: true },
@@ -254,6 +260,37 @@ describe("aggregateStats", () => {
     expect(stats.invalidAttempts).toBe(1);
     expect(stats.totalPlayTimeMs).toBe(15000);
     expect(stats.longestGameMs).toBe(10000);
+    expect(stats.abandonRate).toBe(0.5);
+    expect(stats.invalidRate).toBe(1);
+    expect(stats.avgPlayTimeMs).toBe(10000);
+  });
+
+  it("counts losses as 6 guesses and tracks replays", () => {
+    const stats = aggregateStats({
+      games: [
+        { ...baseGame, won: 1, guess_count: 2, answer: "carte", finished_at: 100 },
+        { ...baseGame, won: 0, guess_count: 6, answer: "carte", finished_at: 200 },
+        { ...baseGame, won: 1, guess_count: 4, answer: "altce", finished_at: 300 },
+      ],
+      invalids: [
+        { difficulty: "easy", letter_count: 5, at: 1 },
+        { difficulty: "easy", letter_count: 5, at: 2 },
+      ],
+      abandons: [],
+      validGuesses: [
+        { difficulty: "easy", letter_count: 5, at: 1 },
+        { difficulty: "easy", letter_count: 5, at: 2 },
+        { difficulty: "easy", letter_count: 5, at: 3 },
+        { difficulty: "easy", letter_count: 5, at: 4 },
+        { difficulty: "easy", letter_count: 5, at: 5 },
+        { difficulty: "easy", letter_count: 5, at: 6 },
+      ],
+    });
+    expect(stats.avgGuessesAll).toBeCloseTo((2 + 6 + 4) / 3);
+    expect(stats.winRateIn3).toBeCloseTo(1 / 3);
+    expect(stats.winRateIn4).toBeCloseTo(2 / 3);
+    expect(stats.replays).toBe(1);
+    expect(stats.invalidRate).toBeCloseTo(2 / 8);
   });
 });
 

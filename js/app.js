@@ -1479,8 +1479,16 @@ explainClose.addEventListener("click", hideExplain);
 explainOverlay.addEventListener("click", (e) => {
   if (e.target === explainOverlay) hideExplain();
 });
-$("#btn-new").addEventListener("click", () => {
+$("#btn-new").addEventListener("click", async () => {
   if (!state.solutions.length) return;
+  if (hasActiveProgress()) {
+    const ok = await promptConfirm({
+      title: "Cuvânt nou",
+      detail: "Abandonezi partida curentă și începi una nouă?",
+      confirmLabel: "Da, cuvânt nou",
+    });
+    if (!ok) return;
+  }
   resetRound();
   showToast("Cuvânt nou");
 });
@@ -1496,7 +1504,7 @@ $("#btn-play-again").addEventListener("click", () => {
   resetRound();
 });
 $("#btn-end-setup").addEventListener("click", backToSetup);
-$("#btn-end-board").addEventListener("click", dismissEndScreen);
+$("#btn-end-close").addEventListener("click", dismissEndScreen);
 endOverlay.addEventListener("click", (e) => {
   if (e.target === endOverlay) dismissEndScreen();
 });

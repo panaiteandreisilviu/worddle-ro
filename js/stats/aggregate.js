@@ -122,7 +122,11 @@ export function aggregateStats(data, filter = {}) {
   const letterMap = new Map();
 
   let sumGuessesOnWins = 0;
+  let sumGuessesAll = 0;
+  let winsIn3 = 0;
+  let winsIn4 = 0;
   let sumWinTime = 0;
+  let sumPlayTimeFinished = 0;
   let totalLossTime = 0;
   let fastest = null;
   let slowest = null;
@@ -144,11 +148,16 @@ export function aggregateStats(data, filter = {}) {
     const playTime = Number(g.play_time_ms) || 0;
     const finishedAt = Number(g.finished_at) || 0;
 
+    sumPlayTimeFinished += playTime;
+    sumGuessesAll += won ? guessCount : 6;
+
     if (won) {
       stats.wins += 1;
       if (guessCount >= 1 && guessCount <= 6) {
         stats.winsByTries[guessCount] += 1;
       }
+      if (guessCount <= 3) winsIn3 += 1;
+      if (guessCount <= 4) winsIn4 += 1;
       sumGuessesOnWins += guessCount;
       sumWinTime += playTime;
       if (fastest == null || playTime < fastest) fastest = playTime;
@@ -222,21 +231,37 @@ export function aggregateStats(data, filter = {}) {
 
   const streaks = streakFromResults(chrono);
 
+  const startedGames = stats.gamesPlayed + stats.gamesAbandoned;
+  const submittedWords = stats.validGuesses + stats.invalidAttempts;
+
   stats.sumGuessesOnWins = sumGuessesOnWins;
   stats.winRate = stats.gamesPlayed ? stats.wins / stats.gamesPlayed : null;
   stats.avgGuessesOnWins = stats.wins ? sumGuessesOnWins / stats.wins : null;
+  stats.avgGuessesAll = stats.gamesPlayed
+    ? sumGuessesAll / stats.gamesPlayed
+    : null;
+  stats.winRateIn3 = stats.gamesPlayed ? winsIn3 / stats.gamesPlayed : null;
+  stats.winRateIn4 = stats.gamesPlayed ? winsIn4 / stats.gamesPlayed : null;
   stats.lastPlayedAt = lastPlayed;
   stats.daysPlayed = days.size;
-  stats.totalPlayTimeMs =
-    games.reduce((s, g) => s + (Number(g.play_time_ms) || 0), 0) +
-    abandonPlayTime;
+  stats.totalPlayTimeMs = sumPlayTimeFinished + abandonPlayTime;
+  stats.avgPlayTimeMs = stats.gamesPlayed
+    ? sumPlayTimeFinished / stats.gamesPlayed
+    : null;
   stats.currentWinStreak = streaks.currentWin;
   stats.maxWinStreak = streaks.maxWin;
   stats.currentLossStreak = streaks.currentLoss;
   stats.maxLossStreak = streaks.maxLoss;
+  stats.invalidRate = submittedWords
+    ? stats.invalidAttempts / submittedWords
+    : null;
+  stats.abandonRate = startedGames
+    ? stats.gamesAbandoned / startedGames
+    : null;
   stats.uniqueAnswersPlayed = played.size;
   stats.uniqueAnswersWon = wonSet.size;
   stats.uniqueAnswersLost = lostSet.size;
+  stats.replays = Math.max(0, stats.gamesPlayed - played.size);
   stats.fastestWinMs = fastest;
   stats.slowestWinMs = slowest;
   stats.sumWinTimeMs = sumWinTime;
@@ -254,6 +279,9 @@ export function aggregateStats(data, filter = {}) {
     : null;
   stats.bestFirstRowGreens = bestFirst;
   stats.gamesWithViolet = withViolet;
+  stats.violetGameRate = stats.gamesPlayed
+    ? withViolet / stats.gamesPlayed
+    : null;
   stats.badgeTotal = badges;
   stats.guessedWords.sort((a, b) => b.finishedAt - a.finishedAt);
   stats.triedWords = [...triedMap.entries()]
